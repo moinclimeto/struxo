@@ -1,0 +1,1812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>STRUXO | Recycled Plastic Pallets — The Pallet That Pays You Back</title>
+<meta name="description" content="STRUXO plastic pallets last 60+ cycles versus wood's 12 — cutting your cost per trip by up to 63%. ISO-tested. ISPM 15 exempt. 100% recycled. Get a free TCO analysis.">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --g:#1B4332;--leaf:#52B788;--mist:#D8F3DC;--sage:#A8DABC;
+  --steel:#2D3A3A;--slate:#495057;--cloud:#F8F9FA;--w:#fff;
+  --r:12px;--r2:8px;--shadow:0 2px 20px rgba(27,67,50,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:var(--steel);background:var(--w);line-height:1.6;overflow-x:hidden}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid rgba(168,218,188,.3);padding:0 2rem}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:68px}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nav-links{display:flex;align-items:center;gap:2rem;list-style:none}
+.nav-links a{text-decoration:none;font-size:.85rem;font-weight:500;color:var(--slate);letter-spacing:.02em;transition:color .2s}
+.nav-links a:hover{color:var(--g)}
+.btn-nav{background:var(--g)!important;color:var(--w)!important;padding:.5rem 1.1rem;border-radius:6px;font-size:.82rem!important;white-space:nowrap;transition:background .2s!important}
+.btn-nav:hover{background:#143728!important}
+.nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:4px}
+
+/* HERO */
+.hero{min-height:100vh;background:var(--steel);display:grid;grid-template-columns:1fr 1fr;align-items:center;padding-top:68px}
+.hero-copy{padding:5rem 3rem 5rem 4rem;max-width:600px}
+.hero-tag{display:inline-block;background:rgba(82,183,136,.15);color:var(--leaf);font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:.35rem .8rem;border-radius:4px;margin-bottom:1.5rem}
+.hero h1{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:4.2rem;line-height:1.0;color:var(--w);margin-bottom:1.25rem;letter-spacing:.01em}
+.hero h1 span{color:var(--leaf)}
+.hero-sub{font-size:1.1rem;color:rgba(255,255,255,.72);margin-bottom:2rem;line-height:1.7;max-width:480px}
+.hero-ctas{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:3rem}
+.btn-primary{background:var(--leaf);color:var(--w);padding:.85rem 1.8rem;border-radius:7px;font-weight:600;font-size:.9rem;text-decoration:none;display:inline-flex;align-items:center;gap:.5rem;transition:all .2s}
+.btn-primary:hover{background:#3da570;transform:translateY(-1px)}
+.btn-outline{border:1.5px solid rgba(255,255,255,.35);color:var(--w);padding:.85rem 1.8rem;border-radius:7px;font-weight:500;font-size:.9rem;text-decoration:none;transition:all .2s}
+.btn-outline:hover{border-color:var(--leaf);color:var(--leaf)}
+.hero-proof{display:flex;gap:2rem}
+.proof-item{text-align:center}
+.proof-num{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2rem;color:var(--leaf);display:block}
+.proof-label{font-size:.75rem;color:rgba(255,255,255,.55);letter-spacing:.05em}
+.hero-scene{background:#1a2820;display:flex;align-items:center;justify-content:center;min-height:100vh;padding:2rem;overflow:hidden}
+
+/* STATS BAR */
+.stats-bar{background:var(--g);padding:2rem 2rem}
+.stats-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem}
+.stat-item{text-align:center}
+.stat-num{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2.5rem;color:var(--leaf);display:block}
+.stat-label{font-size:.82rem;color:rgba(255,255,255,.65);letter-spacing:.04em}
+
+/* SECTIONS */
+section{padding:5rem 2rem}
+.section-inner{max-width:1200px;margin:0 auto}
+.section-tag{display:inline-block;font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--leaf);margin-bottom:.75rem}
+.section-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2.8rem;color:var(--g);line-height:1.1;margin-bottom:1rem}
+.section-sub{font-size:1.05rem;color:var(--slate);max-width:600px;line-height:1.7;margin-bottom:3rem}
+.bg-cloud{background:var(--cloud)}
+.bg-green{background:var(--g)}
+.bg-mist{background:var(--mist)}
+
+/* BENEFITS */
+.benefits-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.benefit-card{background:var(--w);border-radius:var(--r);padding:2rem;border:1px solid rgba(168,218,188,.4);transition:all .25s;position:relative;overflow:hidden}
+.benefit-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--leaf);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.benefit-card:hover::before{transform:scaleX(1)}
+.benefit-card:hover{box-shadow:var(--shadow);transform:translateY(-3px)}
+.benefit-icon{width:48px;height:48px;background:var(--mist);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem}
+.benefit-card h3{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.3rem;color:var(--g);margin-bottom:.5rem}
+.benefit-card p{font-size:.9rem;color:var(--slate);line-height:1.65}
+
+/* PRODUCTS */
+.products-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:3rem}
+.product-card{background:var(--w);border-radius:var(--r);overflow:hidden;border:1px solid rgba(168,218,188,.4);transition:all .25s}
+.product-card:hover{box-shadow:0 8px 40px rgba(27,67,50,.15);transform:translateY(-4px)}
+.product-img{background:var(--steel);padding:2.5rem;display:flex;align-items:center;justify-content:center;min-height:200px}
+.product-body{padding:1.75rem}
+.product-tag{font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--leaf);margin-bottom:.5rem;display:block}
+.product-body h3{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.7rem;color:var(--g);margin-bottom:.6rem}
+.product-body p{font-size:.88rem;color:var(--slate);line-height:1.65;margin-bottom:1.25rem}
+.spec-grid{display:grid;grid-template-columns:1fr 1fr;gap:.4rem .75rem;margin-bottom:1.25rem}
+.spec-item{font-size:.78rem}
+.spec-label{color:var(--slate)}
+.spec-val{font-weight:600;color:var(--steel)}
+.product-cta{display:inline-flex;align-items:center;gap:.4rem;font-size:.85rem;font-weight:600;color:var(--g);text-decoration:none;border-bottom:1.5px solid var(--leaf);padding-bottom:2px;transition:gap .2s}
+.product-cta:hover{gap:.7rem}
+
+/* COMPARE TABLE */
+.compare-wrap{overflow-x:auto;margin-top:3rem}
+.compare-table{width:100%;border-collapse:collapse;min-width:600px}
+.compare-table th{padding:1rem 1.25rem;font-family:'Barlow Condensed',sans-serif;font-size:1.1rem;font-weight:700;letter-spacing:.02em}
+.compare-table th:first-child{text-align:left;color:var(--slate);font-size:.85rem;font-family:'Inter',sans-serif;font-weight:500}
+.compare-table th:nth-child(2){background:rgba(255,255,255,.1);color:rgba(255,255,255,.7)}
+.compare-table th:nth-child(3){background:rgba(255,255,255,.1);color:rgba(255,255,255,.7)}
+.compare-table th:nth-child(4){background:var(--leaf);color:var(--g);border-radius:8px 8px 0 0}
+.compare-table td{padding:.85rem 1.25rem;font-size:.88rem;border-bottom:1px solid rgba(255,255,255,.08)}
+.compare-table td:first-child{color:rgba(255,255,255,.6);font-size:.82rem}
+.compare-table td:nth-child(2){text-align:center;color:rgba(255,255,255,.55)}
+.compare-table td:nth-child(3){text-align:center;color:rgba(255,255,255,.7)}
+.compare-table td:nth-child(4){text-align:center;font-weight:600;color:var(--g);background:rgba(82,183,136,.12)}
+.compare-table tr:last-child td:nth-child(4){border-radius:0 0 8px 8px}
+.check{color:var(--leaf);font-size:1.1rem}
+.cross{color:#e05555}
+
+/* INDUSTRIES */
+.ind-tabs{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:2.5rem}
+.ind-tab{background:none;border:1.5px solid var(--sage);color:var(--slate);padding:.6rem 1.2rem;border-radius:50px;font-size:.83rem;font-weight:500;cursor:pointer;transition:all .2s}
+.ind-tab.active,.ind-tab:hover{background:var(--g);color:var(--w);border-color:var(--g)}
+.ind-panels>div{display:none}
+.ind-panels>div.active{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+.ind-copy h3{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2rem;color:var(--g);margin-bottom:.75rem}
+.ind-challenge{background:var(--mist);border-left:3px solid var(--leaf);padding:.85rem 1rem;border-radius:0 8px 8px 0;font-size:.88rem;color:var(--steel);margin-bottom:1.25rem;font-style:italic}
+.ind-copy p{font-size:.92rem;color:var(--slate);line-height:1.7;margin-bottom:1rem}
+.ind-bullets{list-style:none;margin-bottom:1.5rem}
+.ind-bullets li{font-size:.88rem;color:var(--slate);padding:.3rem 0;padding-left:1.25rem;position:relative}
+.ind-bullets li::before{content:'✓';color:var(--leaf);font-weight:700;position:absolute;left:0}
+.ind-scene{background:var(--steel);border-radius:var(--r);overflow:hidden;display:flex;align-items:center;justify-content:center;min-height:320px;padding:1.5rem}
+
+/* SUSTAINABILITY */
+.sus-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.sus-stats{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-top:2rem}
+.sus-stat{background:rgba(82,183,136,.1);border-radius:var(--r2);padding:1.5rem;border:1px solid rgba(82,183,136,.25)}
+.sus-stat-num{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2.2rem;color:var(--leaf);display:block}
+.sus-stat-label{font-size:.82rem;color:rgba(255,255,255,.65)}
+
+/* TESTIMONIALS */
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.testi-card{background:var(--w);border-radius:var(--r);padding:2rem;border:1px solid rgba(168,218,188,.4);position:relative}
+.testi-card::before{content:'"';font-family:'Barlow Condensed',sans-serif;font-size:5rem;color:var(--mist);position:absolute;top:.5rem;left:1.5rem;line-height:1}
+.testi-text{font-size:.92rem;color:var(--steel);line-height:1.7;margin-bottom:1.5rem;margin-top:1.5rem;font-style:italic}
+.testi-name{font-weight:600;font-size:.88rem;color:var(--g);display:block}
+.testi-role{font-size:.8rem;color:var(--slate)}
+.testi-stars{color:var(--leaf);font-size:.9rem;margin-bottom:.75rem;letter-spacing:.1em}
+
+/* FAQ */
+.faq-list{max-width:800px;margin:3rem auto 0}
+.faq-item{border-bottom:1px solid rgba(168,218,188,.4);overflow:hidden}
+.faq-q{width:100%;background:none;border:none;text-align:left;padding:1.25rem 0;font-size:1rem;font-weight:600;color:var(--steel);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.faq-q:hover{color:var(--g)}
+.faq-icon{width:24px;height:24px;border:1.5px solid var(--sage);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1rem;color:var(--leaf);transition:transform .3s;background:var(--mist)}
+.faq-item.open .faq-icon{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .3s}
+.faq-item.open .faq-a{max-height:200px;padding-bottom:1.25rem}
+.faq-a p{font-size:.9rem;color:var(--slate);line-height:1.7}
+
+/* CONTACT */
+.contact-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:4rem;align-items:start}
+.contact-info h3{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2rem;color:var(--w);margin-bottom:.75rem}
+.contact-info p{font-size:.9rem;color:rgba(255,255,255,.65);line-height:1.7;margin-bottom:2rem}
+.contact-steps{list-style:none}
+.contact-steps li{display:flex;gap:.85rem;align-items:flex-start;margin-bottom:1rem}
+.step-num{width:26px;height:26px;background:var(--leaf);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;color:var(--g);flex-shrink:0;margin-top:.1rem}
+.contact-steps li p{font-size:.87rem;color:rgba(255,255,255,.7)}
+.contact-form{background:var(--w);border-radius:var(--r);padding:2.5rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.form-group{margin-bottom:1.25rem}
+.form-group label{display:block;font-size:.8rem;font-weight:600;color:var(--steel);margin-bottom:.4rem;letter-spacing:.02em}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:.7rem .95rem;border:1.5px solid rgba(168,218,188,.6);border-radius:6px;font-family:'Inter',sans-serif;font-size:.88rem;color:var(--steel);background:var(--cloud);transition:border-color .2s,box-shadow .2s;outline:none}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--leaf);box-shadow:0 0 0 3px rgba(82,183,136,.15);background:var(--w)}
+.form-group textarea{resize:vertical;min-height:90px}
+.btn-submit{width:100%;background:var(--g);color:var(--w);padding:.95rem;border:none;border-radius:7px;font-family:'Inter',sans-serif;font-size:.95rem;font-weight:600;cursor:pointer;transition:all .2s;margin-top:.5rem}
+.btn-submit:hover{background:#143728;transform:translateY(-1px)}
+
+/* FOOTER */
+footer{background:var(--steel);padding:3rem 2rem 2rem}
+.footer-inner{max-width:1200px;margin:0 auto}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem}
+.footer-brand p{font-size:.88rem;color:rgba(255,255,255,.5);line-height:1.7;margin-top:.75rem}
+.footer-col h4{font-size:.8rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--leaf);margin-bottom:1rem}
+.footer-col ul{list-style:none}
+.footer-col li{margin-bottom:.5rem}
+.footer-col a{color:rgba(255,255,255,.55);text-decoration:none;font-size:.85rem;transition:color .2s}
+.footer-col a:hover{color:var(--leaf)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center}
+.footer-bottom p{font-size:.8rem;color:rgba(255,255,255,.35)}
+
+/* ANIM */
+.fade-up{opacity:0;transform:translateY(28px);transition:opacity .6s ease,transform .6s ease}
+.fade-up.visible{opacity:1;transform:translateY(0)}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr}.hero-scene{display:none}
+  .hero-copy{padding:3rem 1.5rem;max-width:100%}
+  .hero h1{font-size:3rem}
+  .benefits-grid,.products-grid{grid-template-columns:1fr}
+  .testi-grid{grid-template-columns:1fr}
+  .stats-inner{grid-template-columns:repeat(2,1fr)}
+  .ind-panels>div.active{grid-template-columns:1fr}
+  .sus-grid,.contact-grid,.footer-top{grid-template-columns:1fr}
+  .compare-table th:nth-child(2),.compare-table td:nth-child(2){display:none}
+  .nav-links{display:none}
+  .nav-toggle{display:block}
+}
+@media(max-width:600px){
+  .hero h1{font-size:2.4rem}
+  section{padding:3.5rem 1.25rem}
+  .form-row{grid-template-columns:1fr}
+  .stats-inner{grid-template-columns:1fr 1fr;gap:1.25rem}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+<div class="nav-inner">
+  <a href="#" class="nav-logo">
+    <svg width="130" viewBox="0 0 130 38" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0" y="1" width="26" height="6" fill="#1B4332"/>
+      <rect x="19" y="1" width="7" height="19" fill="#1B4332"/>
+      <rect x="0" y="14" width="26" height="6" fill="#1B4332"/>
+      <rect x="0" y="14" width="7" height="19" fill="#1B4332"/>
+      <rect x="0" y="31" width="26" height="6" fill="#1B4332"/>
+      <text x="36" y="30" font-family="'Barlow Condensed',sans-serif" font-weight="900" font-size="28" fill="#1B4332" letter-spacing="1.5">STRUXO</text>
+    </svg>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#products">Products</a></li>
+    <li><a href="#industries">Industries</a></li>
+    <li><a href="#sustainability">Sustainability</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#contact" class="btn-nav">Get Free TCO Analysis →</a></li>
+  </ul>
+  <button class="nav-toggle" onclick="document.querySelector('.nav-links').style.display=document.querySelector('.nav-links').style.display==='flex'?'none':'flex'" aria-label="Menu">
+    <svg width="22" height="18" viewBox="0 0 22 18" fill="none"><rect y="0" width="22" height="2.5" rx="1.25" fill="#2D3A3A"/><rect y="7.75" width="22" height="2.5" rx="1.25" fill="#2D3A3A"/><rect y="15.5" width="22" height="2.5" rx="1.25" fill="#2D3A3A"/></svg>
+  </button>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-copy">
+    <span class="hero-tag">India's leading recycled plastic pallet</span>
+    <h1>The Pallet<br>That <span>Pays</span><br>You Back.</h1>
+    <p class="hero-sub">STRUXO industrial pallets — engineered from recycled plastic — deliver 60+ cycle life, zero maintenance, and up to 63% lower cost per trip. Built for India's warehouses, supply chains, and export floors.</p>
+    <div class="hero-ctas">
+      <a href="#contact" class="btn-primary">Get Free TCO Analysis →</a>
+      <a href="#products" class="btn-outline">View Products</a>
+    </div>
+    <div class="hero-proof">
+      <div class="proof-item"><span class="proof-num">60+</span><span class="proof-label">Cycle life</span></div>
+      <div class="proof-item"><span class="proof-num">63%</span><span class="proof-label">Lower cost/trip</span></div>
+      <div class="proof-item"><span class="proof-num">25kg</span><span class="proof-label">Plastic diverted</span></div>
+      <div class="proof-item"><span class="proof-num">ISO</span><span class="proof-label">8611 tested</span></div>
+    </div>
+  </div>
+  <div class="hero-scene">
+    <!-- WAREHOUSE HERO SVG -->
+    <svg width="100%" viewBox="0 0 560 480" xmlns="http://www.w3.org/2000/svg">
+      <!-- Ceiling -->
+      <rect x="0" y="0" width="560" height="90" fill="#111a14"/>
+      <!-- Ceiling lights -->
+      <rect x="60" y="12" width="80" height="8" rx="2" fill="rgba(255,255,200,.18)"/>
+      <rect x="220" y="12" width="80" height="8" rx="2" fill="rgba(255,255,200,.18)"/>
+      <rect x="380" y="12" width="80" height="8" rx="2" fill="rgba(255,255,200,.18)"/>
+      <rect x="60" y="18" width="80" height="2" fill="rgba(255,255,200,.08)"/>
+      <rect x="220" y="18" width="80" height="2" fill="rgba(255,255,200,.08)"/>
+      <rect x="380" y="18" width="80" height="2" fill="rgba(255,255,200,.08)"/>
+      <!-- Back wall -->
+      <rect x="155" y="90" width="250" height="260" fill="#1e2a1e"/>
+      <!-- Floor -->
+      <polygon points="0,480 560,480 405,350 155,350" fill="#2a352a"/>
+      <polygon points="0,480 155,350 155,480" fill="#242e24"/>
+      <polygon points="560,480 405,350 405,480" fill="#242e24"/>
+      <!-- Floor grid lines perspective -->
+      <line x1="210" y1="350" x2="175" y2="480" stroke="rgba(82,183,136,.1)" stroke-width="1"/>
+      <line x1="265" y1="350" x2="255" y2="480" stroke="rgba(82,183,136,.1)" stroke-width="1"/>
+      <line x1="320" y1="350" x2="335" y2="480" stroke="rgba(82,183,136,.1)" stroke-width="1"/>
+      <line x1="350" y1="350" x2="390" y2="480" stroke="rgba(82,183,136,.1)" stroke-width="1"/>
+      <line x1="155" y1="390" x2="405" y2="390" stroke="rgba(82,183,136,.07)" stroke-width="1"/>
+      <line x1="140" y1="430" x2="420" y2="430" stroke="rgba(82,183,136,.07)" stroke-width="1"/>
+
+      <!-- ===== LEFT RACKING SYSTEM ===== -->
+      <!-- Upright posts left rack -->
+      <rect x="0" y="90" width="8" height="350" fill="#3a4a3a"/>
+      <rect x="70" y="90" width="8" height="350" fill="#3a4a3a"/>
+      <rect x="140" y="90" width="8" height="350" fill="#3a4a3a"/>
+      <!-- Horizontal beams left rack - shelf 4 (top) y=130 -->
+      <rect x="0" y="128" width="148" height="5" fill="#4a5a4a"/>
+      <!-- Horizontal beams left rack - shelf 3 y=200 -->
+      <rect x="0" y="198" width="148" height="5" fill="#4a5a4a"/>
+      <!-- Horizontal beams left rack - shelf 2 y=270 -->
+      <rect x="0" y="268" width="148" height="5" fill="#4a5a4a"/>
+      <!-- Horizontal beams left rack - shelf 1 y=340 -->
+      <rect x="0" y="338" width="148" height="5" fill="#4a5a4a"/>
+      <!-- Cross bracing left rack -->
+      <line x1="0" y1="90" x2="70" y2="198" stroke="#2e3e2e" stroke-width="2"/>
+      <line x1="70" y1="90" x2="0" y2="198" stroke="#2e3e2e" stroke-width="2"/>
+      <line x1="70" y1="200" x2="140" y2="270" stroke="#2e3e2e" stroke-width="2"/>
+      <line x1="140" y1="200" x2="70" y2="270" stroke="#2e3e2e" stroke-width="2"/>
+
+      <!-- ===== LEFT RACK PALLETS + GOODS ===== -->
+      <!-- Shelf 4 (top) Bay L1: x=8-62 -->
+      <rect x="8" y="116" width="56" height="10" rx="1" fill="#1B4332"/>
+      <rect x="10" y="96" width="52" height="20" rx="1" fill="#2d5240"/>
+      <rect x="12" y="93" width="12" height="8" fill="#3d6e53"/>
+      <rect x="26" y="93" width="12" height="8" fill="#4a7a5e"/>
+      <rect x="40" y="93" width="12" height="8" fill="#3d6e53"/>
+      <!-- Shelf 4 Bay L2: x=78-132 -->
+      <rect x="78" y="116" width="56" height="10" rx="1" fill="#1B4332"/>
+      <rect x="80" y="96" width="52" height="20" rx="1" fill="#2d5240"/>
+      <rect x="82" y="93" width="16" height="8" fill="#4a7a5e"/>
+      <rect x="100" y="93" width="16" height="8" fill="#3d6e53"/>
+      <rect x="118" y="93" width="12" height="8" fill="#4a7a5e"/>
+
+      <!-- Shelf 3 Bay L1 -->
+      <rect x="8" y="186" width="56" height="10" rx="1" fill="#1B4332"/>
+      <rect x="10" y="150" width="52" height="36" rx="1" fill="#5a3a1a"/><!-- brown boxes -->
+      <rect x="10" y="142" width="24" height="12" fill="#6b4520"/>
+      <rect x="36" y="142" width="24" height="12" fill="#7a5028"/>
+      <!-- Shelf 3 Bay L2 -->
+      <rect x="78" y="186" width="56" height="10" rx="1" fill="#1B4332"/>
+      <rect x="80" y="154" width="52" height="32" rx="1" fill="#5a3a1a"/>
+      <rect x="82" y="146" width="20" height="12" fill="#6b4520"/>
+      <rect x="104" y="146" width="20" height="12" fill="#7a5028"/>
+
+      <!-- Shelf 2 Bay L1 -->
+      <rect x="8" y="256" width="56" height="10" rx="1" fill="#1B4332"/>
+      <rect x="10" y="222" width="52" height="34" rx="1" fill="#1a3a5a"/><!-- blue boxes -->
+      <rect x="12" y="214" width="22" height="12" fill="#1e4a70"/>
+      <rect x="36" y="214" width="20" height="12" fill="#245580"/>
+      <!-- Shelf 2 Bay L2 -->
+      <rect x="78" y="256" width="56" height="10" rx="1" fill="#1B4332"/>
+      <rect x="80" y="222" width="52" height="34" rx="1" fill="#1a3a5a"/>
+
+      <!-- Shelf 1 (floor level) Bay L1 -->
+      <rect x="8" y="326" width="56" height="10" rx="1" fill="#1B4332"/>
+      <rect x="10" y="295" width="52" height="31" rx="1" fill="#3a3a1a"/>
+      <!-- Shelf 1 Bay L2 -->
+      <rect x="78" y="326" width="56" height="10" rx="1" fill="#1B4332"/>
+      <rect x="80" y="295" width="52" height="31" rx="1" fill="#3a3a1a"/>
+
+      <!-- ===== RIGHT RACKING SYSTEM ===== -->
+      <rect x="412" y="90" width="8" height="350" fill="#3a4a3a"/>
+      <rect x="482" y="90" width="8" height="350" fill="#3a4a3a"/>
+      <rect x="552" y="90" width="8" height="350" fill="#3a4a3a"/>
+      <rect x="412" y="128" width="148" height="5" fill="#4a5a4a"/>
+      <rect x="412" y="198" width="148" height="5" fill="#4a5a4a"/>
+      <rect x="412" y="268" width="148" height="5" fill="#4a5a4a"/>
+      <rect x="412" y="338" width="148" height="5" fill="#4a5a4a"/>
+      <line x1="420" y1="90" x2="490" y2="198" stroke="#2e3e2e" stroke-width="2"/>
+      <line x1="490" y1="90" x2="420" y2="198" stroke="#2e3e2e" stroke-width="2"/>
+      <line x1="490" y1="200" x2="552" y2="270" stroke="#2e3e2e" stroke-width="2"/>
+      <line x1="552" y1="200" x2="490" y2="270" stroke="#2e3e2e" stroke-width="2"/>
+
+      <!-- Right rack pallets + goods (mirror) -->
+      <rect x="420" y="116" width="56" height="10" rx="1" fill="#1B4332"/>
+      <rect x="422" y="96" width="52" height="20" rx="1" fill="#2d5240"/>
+      <rect x="424" y="93" width="14" height="8" fill="#3d6e53"/>
+      <rect x="440" y="93" width="14" height="8" fill="#4a7a5e"/>
+      <rect x="456" y="93" width="14" height="8" fill="#3d6e53"/>
+      <rect x="490" y="116" width="56" height="10" rx="1" fill="#1B4332"/>
+      <rect x="492" y="96" width="52" height="20" rx="1" fill="#2d5240"/>
+      <rect x="494" y="93" width="14" height="8" fill="#4a7a5e"/>
+      <rect x="510" y="93" width="14" height="8" fill="#3d6e53"/>
+
+      <rect x="420" y="186" width="56" height="10" rx="1" fill="#1B4332"/>
+      <rect x="422" y="150" width="52" height="36" rx="1" fill="#5a3a1a"/>
+      <rect x="490" y="186" width="56" height="10" rx="1" fill="#1B4332"/>
+      <rect x="492" y="154" width="52" height="32" rx="1" fill="#5a3a1a"/>
+
+      <rect x="420" y="256" width="56" height="10" rx="1" fill="#1B4332"/>
+      <rect x="422" y="222" width="52" height="34" rx="1" fill="#1a3a5a"/>
+      <rect x="490" y="256" width="56" height="10" rx="1" fill="#1B4332"/>
+      <rect x="492" y="222" width="52" height="34" rx="1" fill="#1a3a5a"/>
+
+      <rect x="420" y="326" width="56" height="10" rx="1" fill="#1B4332"/>
+      <rect x="422" y="295" width="52" height="31" rx="1" fill="#3a3a1a"/>
+      <rect x="490" y="326" width="56" height="10" rx="1" fill="#1B4332"/>
+      <rect x="492" y="295" width="52" height="31" rx="1" fill="#3a3a1a"/>
+
+      <!-- ===== FORKLIFT in center aisle ===== -->
+      <!-- Body/counterweight -->
+      <rect x="238" y="340" width="60" height="38" rx="3" fill="#d4a017"/>
+      <!-- Cab/roof -->
+      <rect x="248" y="316" width="40" height="28" rx="2" fill="#b88a10"/>
+      <!-- Windshield -->
+      <rect x="252" y="320" width="24" height="16" rx="1" fill="rgba(100,200,255,.25)"/>
+      <!-- Operator (head) -->
+      <circle cx="264" cy="313" r="7" fill="#c8a070"/>
+      <!-- Mast vertical bars -->
+      <rect x="230" y="210" width="5" height="138" fill="#8a8a7a"/>
+      <rect x="240" y="215" width="5" height="133" fill="#8a8a7a"/>
+      <!-- Mast cross bar -->
+      <rect x="228" y="268" width="20" height="4" fill="#707060"/>
+      <!-- Fork carriage -->
+      <rect x="221" y="320" width="24" height="5" fill="#606050"/>
+      <!-- Forks (two tines) -->
+      <rect x="196" y="325" width="50" height="4" rx="1" fill="#505040"/>
+      <rect x="196" y="333" width="50" height="4" rx="1" fill="#505040"/>
+      <!-- Wheels -->
+      <ellipse cx="248" cy="378" rx="12" ry="12" fill="#222"/>
+      <ellipse cx="248" cy="378" rx="6" ry="6" fill="#444"/>
+      <ellipse cx="292" cy="378" rx="12" ry="12" fill="#222"/>
+      <ellipse cx="292" cy="378" rx="6" ry="6" fill="#444"/>
+      <!-- Small front wheel -->
+      <ellipse cx="220" cy="375" rx="7" ry="7" fill="#222"/>
+
+      <!-- Pallet on forks (STRUXO highlighted) -->
+      <rect x="195" y="315" width="55" height="8" rx="1" fill="#1B4332"/>
+      <!-- Boxes on pallet -->
+      <rect x="197" y="291" width="18" height="24" rx="1" fill="#52B788"/>
+      <rect x="217" y="291" width="18" height="24" rx="1" fill="#3da570"/>
+      <rect x="237" y="295" width="12" height="20" rx="1" fill="#52B788"/>
+
+      <!-- STRUXO label on pallet -->
+      <rect x="197" y="308" width="50" height="6" fill="#143728"/>
+      <text x="222" y="314" font-family="'Barlow Condensed',sans-serif" font-size="5" font-weight="900" fill="#52B788" text-anchor="middle" letter-spacing=".5">STRUXO</text>
+
+      <!-- Ambient glow from ceiling lights on floor -->
+      <ellipse cx="100" cy="420" rx="50" ry="20" fill="rgba(255,255,200,.03)"/>
+      <ellipse cx="280" cy="420" rx="50" ry="20" fill="rgba(255,255,200,.03)"/>
+      <ellipse cx="460" cy="420" rx="50" ry="20" fill="rgba(255,255,200,.03)"/>
+
+      <!-- Depth arrows / STRUXO branding on back wall -->
+      <text x="280" y="220" font-family="'Barlow Condensed',sans-serif" font-size="22" font-weight="900" fill="rgba(82,183,136,.15)" text-anchor="middle" letter-spacing="4">STRUXO</text>
+      <text x="280" y="240" font-family="'Inter',sans-serif" font-size="8" fill="rgba(82,183,136,.1)" text-anchor="middle" letter-spacing="2">RECYCLED PLASTIC PALLETS</text>
+    </svg>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-item"><span class="stat-num">60+</span><span class="stat-label">Cycle life per pallet</span></div>
+    <div class="stat-item"><span class="stat-num">63%</span><span class="stat-label">Lower cost per trip vs wood</span></div>
+    <div class="stat-item"><span class="stat-num">25 kg</span><span class="stat-label">Plastic diverted per pallet</span></div>
+    <div class="stat-item"><span class="stat-num">4,000 kg</span><span class="stat-label">Maximum static load</span></div>
+  </div>
+</div>
+
+<!-- BENEFITS -->
+<section id="benefits" class="bg-cloud">
+<div class="section-inner">
+  <span class="section-tag">Why STRUXO</span>
+  <h2 class="section-title">Six reasons India's supply chains are switching.</h2>
+  <div class="benefits-grid fade-up">
+    <div class="benefit-card">
+      <div class="benefit-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#1B4332" stroke-width="2" stroke-linecap="round"/></svg></div>
+      <h3>Lower Cost Per Trip</h3>
+      <p>At ₹20 per cycle versus wood's ₹33–50, STRUXO pallets save 40–63% on your per-trip pallet cost. Over a year, that adds up to lakhs — not thousands.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#1B4332" stroke-width="2"/><path d="M12 6v6l4 2" stroke="#1B4332" stroke-width="2" stroke-linecap="round"/></svg></div>
+      <h3>Zero Maintenance</h3>
+      <p>No rotting, warping, splinting, or nail popping. STRUXO pallets don't need repair programmes, don't cause downtime, and don't damage products.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" stroke="#1B4332" stroke-width="2"/><path d="M9 22V12h6v10" stroke="#1B4332" stroke-width="2"/></svg></div>
+      <h3>Built for India's Conditions</h3>
+      <p>Designed to withstand monsoon humidity, heat, and rough handling. STRUXO performs where wood fails — consistently, across every seasonal cycle.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke="#1B4332" stroke-width="2" stroke-linecap="round"/></svg></div>
+      <h3>Pest & Chemical Resistant</h3>
+      <p>No fumigation required. No ISPM 15 certificate for exports. STRUXO pallets are impervious to termites, mould, fungi, and industrial cleaning chemicals.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4.5 3.75a3 3 0 013-3h9a3 3 0 013 3v.75m-15 0h15m-15 0a3 3 0 00-3 3v9a3 3 0 003 3h15a3 3 0 003-3v-9a3 3 0 00-3-3" stroke="#1B4332" stroke-width="2"/><path d="M9 12h6M9 15h6" stroke="#1B4332" stroke-width="2" stroke-linecap="round"/></svg></div>
+      <h3>BRSR-Ready Sustainability Data</h3>
+      <p>Each STRUXO pallet diverts 18–25 kg of plastic from landfill. We provide verified impact data ready for your BRSR, GRI, and ESG disclosures.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" stroke="#1B4332" stroke-width="2"/></svg></div>
+      <h3>Consistent Quality. Every Time.</h3>
+      <p>Standardised dimensions and load ratings — every pallet identical. No more picking through inconsistent timber stock or returning warped pallets.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+<div class="section-inner">
+  <span class="section-tag">The STRUXO Range</span>
+  <h2 class="section-title">Three products. One engineering standard.</h2>
+  <p class="section-sub">Choose the STRUXO pallet built for your load profile, handling method, and operating environment.</p>
+  <div class="products-grid">
+
+    <!-- LOAD -->
+    <div class="product-card fade-up">
+      <div class="product-img">
+        <svg width="260" viewBox="0 0 260 190" xmlns="http://www.w3.org/2000/svg">
+          <!-- STRUXO LOAD pallet isometric - heavy duty -->
+          <!-- Ground shadow -->
+          <ellipse cx="130" cy="178" rx="100" ry="8" fill="rgba(0,0,0,.3)"/>
+          <!-- Right face (darkest) -->
+          <polygon points="185,155 222,132 222,102 185,125" fill="#0d2218"/>
+          <!-- Front face with runner detail -->
+          <polygon points="75,155 185,155 185,125 75,125" fill="#143728"/>
+          <!-- Entry gaps (forklift entry) -->
+          <rect x="95" y="127" width="22" height="28" fill="#0a1d12"/>
+          <rect x="145" y="127" width="22" height="28" fill="#0a1d12"/>
+          <!-- Runner blocks visible -->
+          <rect x="75" y="132" width="20" height="23" fill="#1B4332"/>
+          <rect x="117" y="132" width="28" height="23" fill="#1B4332"/>
+          <rect x="163" y="132" width="22" height="23" fill="#1B4332"/>
+          <!-- Top face (deck boards) -->
+          <polygon points="75,125 185,125 222,102 112,102" fill="#52B788"/>
+          <!-- Board lines on top -->
+          <line x1="90" y1="125" x2="127" y2="102" stroke="#1B4332" stroke-width="1.2" opacity=".6"/>
+          <line x1="107" y1="125" x2="144" y2="102" stroke="#1B4332" stroke-width="1.2" opacity=".6"/>
+          <line x1="124" y1="125" x2="161" y2="102" stroke="#1B4332" stroke-width="1.2" opacity=".6"/>
+          <line x1="141" y1="125" x2="178" y2="102" stroke="#1B4332" stroke-width="1.2" opacity=".6"/>
+          <line x1="158" y1="125" x2="195" y2="102" stroke="#1B4332" stroke-width="1.2" opacity=".6"/>
+          <line x1="175" y1="125" x2="212" y2="102" stroke="#1B4332" stroke-width="1.2" opacity=".6"/>
+          <!-- Top face right -->
+          <polygon points="185,125 222,102 222,72 185,95" fill="#0d2218"/>
+          <!-- Goods stacked (heavy components represented by stacked pallets in illustration) -->
+          <!-- Pallet load: 3 levels of boxes (FMCG cartons) -->
+          <polygon points="80,95 185,95 220,73 115,73" fill="#3d8a5a"/>
+          <polygon points="185,95 220,73 220,50 185,72" fill="#2d6a42"/>
+          <polygon points="80,95 185,95 185,72 80,72" fill="#2a5c38"/>
+          <polygon points="84,72 184,72 218,50 118,50" fill="#4a9e68"/>
+          <polygon points="184,72 218,50 218,30 184,50" fill="#358055"/>
+          <polygon points="84,72 184,72 184,50 84,50" fill="#2e6b42"/>
+          <!-- STRUXO label -->
+          <text x="128" y="148" font-family="'Barlow Condensed',sans-serif" font-size="9" font-weight="900" fill="#52B788" text-anchor="middle" letter-spacing="1">STRUXO LOAD</text>
+          <!-- Weight badge -->
+          <rect x="160" y="155" width="52" height="18" rx="3" fill="#52B788"/>
+          <text x="186" y="167" font-family="'Inter',sans-serif" font-size="8" font-weight="600" fill="#0d2218" text-anchor="middle">4,000 kg static</text>
+        </svg>
+      </div>
+      <div class="product-body">
+        <span class="product-tag">Heavy-duty racking pallet</span>
+        <h3>STRUXO LOAD</h3>
+        <p>The flagship for high-density warehousing and racking operations. Matched or exceeds wooden pallet performance at 5× the lifespan.</p>
+        <div class="spec-grid">
+          <div class="spec-item"><span class="spec-label">Dynamic load</span><br><span class="spec-val">1,500 kg</span></div>
+          <div class="spec-item"><span class="spec-label">Static load</span><br><span class="spec-val">4,000 kg</span></div>
+          <div class="spec-item"><span class="spec-label">Racking load</span><br><span class="spec-val">1,200 kg</span></div>
+          <div class="spec-item"><span class="spec-label">Cycle life</span><br><span class="spec-val">60–80 trips</span></div>
+          <div class="spec-item"><span class="spec-label">Entry</span><br><span class="spec-val">4-way</span></div>
+          <div class="spec-item"><span class="spec-label">Temp range</span><br><span class="spec-val">-30°C to +70°C</span></div>
+        </div>
+        <a href="#contact" class="product-cta">Request sample &amp; specs →</a>
+      </div>
+    </div>
+
+    <!-- BRICK -->
+    <div class="product-card fade-up">
+      <div class="product-img">
+        <svg width="260" viewBox="0 0 260 190" xmlns="http://www.w3.org/2000/svg">
+          <!-- STRUXO BRICK - export/general pallet -->
+          <ellipse cx="130" cy="178" rx="95" ry="7" fill="rgba(0,0,0,.3)"/>
+          <!-- Right face -->
+          <polygon points="188,158 224,136 224,108 188,130" fill="#0d2218"/>
+          <!-- Front face -->
+          <polygon points="78,158 188,158 188,130 78,130" fill="#143728"/>
+          <!-- Entry gaps -->
+          <rect x="97" y="132" width="20" height="26" fill="#0a1d12"/>
+          <rect x="148" y="132" width="20" height="26" fill="#0a1d12"/>
+          <!-- Runners -->
+          <rect x="78" y="136" width="19" height="22" fill="#1B4332"/>
+          <rect x="117" y="136" width="31" height="22" fill="#1B4332"/>
+          <rect x="169" y="136" width="19" height="22" fill="#1B4332"/>
+          <!-- Top face -->
+          <polygon points="78,130 188,130 224,108 114,108" fill="#52B788"/>
+          <!-- Board lines -->
+          <line x1="92" y1="130" x2="128" y2="108" stroke="#1B4332" stroke-width="1.1" opacity=".6"/>
+          <line x1="108" y1="130" x2="144" y2="108" stroke="#1B4332" stroke-width="1.1" opacity=".6"/>
+          <line x1="124" y1="130" x2="160" y2="108" stroke="#1B4332" stroke-width="1.1" opacity=".6"/>
+          <line x1="140" y1="130" x2="176" y2="108" stroke="#1B4332" stroke-width="1.1" opacity=".6"/>
+          <line x1="156" y1="130" x2="192" y2="108" stroke="#1B4332" stroke-width="1.1" opacity=".6"/>
+          <line x1="172" y1="130" x2="208" y2="108" stroke="#1B4332" stroke-width="1.1" opacity=".6"/>
+          <!-- Right top -->
+          <polygon points="188,130 224,108 224,80 188,102" fill="#0d2218"/>
+          <!-- Export boxes on pallet -->
+          <polygon points="82,100 186,100 222,78 118,78" fill="#4a6080"/>
+          <polygon points="186,100 222,78 222,56 186,78" fill="#354860"/>
+          <polygon points="82,100 186,100 186,78 82,78" fill="#3d5570"/>
+          <!-- ISPM exempt badge visual -->
+          <rect x="100" y="82" width="40" height="14" rx="2" fill="rgba(82,183,136,.3)"/>
+          <text x="120" y="92" font-family="'Inter',sans-serif" font-size="6.5" font-weight="600" fill="#52B788" text-anchor="middle">ISPM 15 EXEMPT</text>
+          <polygon points="86,78 184,78 220,56 122,56" fill="#5a728a"/>
+          <polygon points="184,78 220,56 220,38 184,56" fill="#425870"/>
+          <polygon points="86,78 184,78 184,56 86,56" fill="#4a6880"/>
+          <!-- Label -->
+          <text x="130" y="152" font-family="'Barlow Condensed',sans-serif" font-size="9" font-weight="900" fill="#52B788" text-anchor="middle" letter-spacing="1">STRUXO BRICK</text>
+          <rect x="158" y="158" width="60" height="18" rx="3" fill="#52B788"/>
+          <text x="188" y="170" font-family="'Inter',sans-serif" font-size="8" font-weight="600" fill="#0d2218" text-anchor="middle">Export-ready</text>
+        </svg>
+      </div>
+      <div class="product-body">
+        <span class="product-tag">General-purpose &amp; export pallet</span>
+        <h3>STRUXO BRICK</h3>
+        <p>Versatile, export-ready. ISPM 15 exempt — no fumigation, no certificates, no delays at port. The smart choice for high-frequency logistics.</p>
+        <div class="spec-grid">
+          <div class="spec-item"><span class="spec-label">Dynamic load</span><br><span class="spec-val">1,000 kg</span></div>
+          <div class="spec-item"><span class="spec-label">Static load</span><br><span class="spec-val">3,000 kg</span></div>
+          <div class="spec-item"><span class="spec-label">Fumigation</span><br><span class="spec-val">Not required</span></div>
+          <div class="spec-item"><span class="spec-label">Cycle life</span><br><span class="spec-val">50–70 trips</span></div>
+          <div class="spec-item"><span class="spec-label">Sizes</span><br><span class="spec-val">1200×1000 mm</span></div>
+          <div class="spec-item"><span class="spec-label">Water absorption</span><br><span class="spec-val">&lt; 0.1%</span></div>
+        </div>
+        <a href="#contact" class="product-cta">Request sample &amp; specs →</a>
+      </div>
+    </div>
+
+    <!-- FORM -->
+    <div class="product-card fade-up">
+      <div class="product-img">
+        <svg width="260" viewBox="0 0 260 190" xmlns="http://www.w3.org/2000/svg">
+          <!-- STRUXO FORM - custom pallet with pharma boxes -->
+          <ellipse cx="130" cy="178" rx="95" ry="7" fill="rgba(0,0,0,.3)"/>
+          <!-- Custom shape pallet - slightly different profile -->
+          <polygon points="72,160 192,160 192,130 72,130" fill="#143728"/>
+          <polygon points="192,160 232,134 232,104 192,130" fill="#0d2218"/>
+          <!-- Wider entry gaps for custom -->
+          <rect x="90" y="132" width="25" height="28" fill="#0a1d12"/>
+          <rect x="150" y="132" width="25" height="28" fill="#0a1d12"/>
+          <rect x="72" y="135" width="18" height="25" fill="#1B4332"/>
+          <rect x="115" y="135" width="35" height="25" fill="#1B4332"/>
+          <rect x="174" y="135" width="18" height="25" fill="#1B4332"/>
+          <polygon points="72,130 192,130 232,104 112,104" fill="#52B788"/>
+          <polygon points="192,130 232,104 232,75 192,101" fill="#0d2218"/>
+          <!-- Board lines -->
+          <line x1="88" y1="130" x2="128" y2="104" stroke="#1B4332" stroke-width="1.1" opacity=".6"/>
+          <line x1="106" y1="130" x2="146" y2="104" stroke="#1B4332" stroke-width="1.1" opacity=".6"/>
+          <line x1="124" y1="130" x2="164" y2="104" stroke="#1B4332" stroke-width="1.1" opacity=".6"/>
+          <line x1="142" y1="130" x2="182" y2="104" stroke="#1B4332" stroke-width="1.1" opacity=".6"/>
+          <line x1="160" y1="130" x2="200" y2="104" stroke="#1B4332" stroke-width="1.1" opacity=".6"/>
+          <!-- Pharma boxes - clean white -->
+          <polygon points="80,96 190,96 228,72 118,72" fill="#e8f0f8"/>
+          <polygon points="190,96 228,72 228,48 190,72" fill="#c8d8e8"/>
+          <polygon points="80,96 190,96 190,72 80,72" fill="#d8e8f0"/>
+          <!-- Pharma cross on box -->
+          <rect x="100" y="76" width="14" height="4" fill="#e05555" rx="1"/>
+          <rect x="105" y="72" width="4" height="12" fill="#e05555" rx="1"/>
+          <text x="135" y="90" font-family="'Inter',sans-serif" font-size="7" font-weight="600" fill="#2d5280" text-anchor="middle">GMP GRADE</text>
+          <polygon points="84,72 188,72 226,48 122,48" fill="#f0f4f8"/>
+          <polygon points="188,72 226,48 226,30 188,48" fill="#d0dce8"/>
+          <polygon points="84,72 188,72 188,48 84,48" fill="#e0eaf2"/>
+          <!-- Custom badge -->
+          <text x="130" y="154" font-family="'Barlow Condensed',sans-serif" font-size="9" font-weight="900" fill="#52B788" text-anchor="middle" letter-spacing="1">STRUXO FORM</text>
+          <rect x="154" y="160" width="58" height="18" rx="3" fill="rgba(82,183,136,.2)"/>
+          <rect x="154" y="160" width="58" height="18" rx="3" fill="none" stroke="#52B788" stroke-width="1"/>
+          <text x="183" y="172" font-family="'Inter',sans-serif" font-size="8" font-weight="600" fill="#52B788" text-anchor="middle">Custom spec</text>
+        </svg>
+      </div>
+      <div class="product-body">
+        <span class="product-tag">Custom-engineered pallet</span>
+        <h3>STRUXO FORM</h3>
+        <p>Purpose-built for non-standard loads, pharma clean rooms, automotive components, and operations where standard dimensions won't do.</p>
+        <div class="spec-grid">
+          <div class="spec-item"><span class="spec-label">Dimensions</span><br><span class="spec-val">Custom</span></div>
+          <div class="spec-item"><span class="spec-label">Load capacity</span><br><span class="spec-val">Engineered to spec</span></div>
+          <div class="spec-item"><span class="spec-label">MOQ</span><br><span class="spec-val">50 units</span></div>
+          <div class="spec-item"><span class="spec-label">Lead time</span><br><span class="spec-val">3–4 weeks</span></div>
+          <div class="spec-item"><span class="spec-label">Marking</span><br><span class="spec-val">Custom logos/QR</span></div>
+          <div class="spec-item"><span class="spec-label">Certification</span><br><span class="spec-val">Load test report</span></div>
+        </div>
+        <a href="#contact" class="product-cta">Start your custom brief →</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!-- COMPARE TABLE -->
+<section class="bg-green">
+<div class="section-inner">
+  <span class="section-tag" style="color:var(--sage)">Why switch</span>
+  <h2 class="section-title" style="color:var(--w)">The numbers don't lie.</h2>
+  <p class="section-sub" style="color:rgba(255,255,255,.65)">A ₹1,200 pallet that lasts 60 cycles costs ₹20 per trip. A ₹400 wooden pallet that lasts 12 cycles costs ₹33. That's before counting damage, fumigation, and disposal.</p>
+  <div class="compare-wrap fade-up">
+    <table class="compare-table">
+      <thead><tr>
+        <th></th>
+        <th>Wooden Pallet</th>
+        <th>Standard Plastic</th>
+        <th>STRUXO Pallet</th>
+      </tr></thead>
+      <tbody>
+        <tr><td>Purchase price</td><td>₹350–500</td><td>₹900–1,400</td><td>₹1,100–1,400</td></tr>
+        <tr><td>Average cycle life</td><td>10–15 trips</td><td>30–50 trips</td><td><strong>60–80 trips</strong></td></tr>
+        <tr><td>Cost per cycle</td><td>₹33–50</td><td>₹22–35</td><td><strong>₹15–22</strong></td></tr>
+        <tr><td>Maintenance cost</td><td>₹100–200/year</td><td>Minimal</td><td><strong>Zero</strong></td></tr>
+        <tr><td>ISPM 15 exempt (export)</td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+        <tr><td>Water absorption</td><td>Up to 20%</td><td>&lt;2%</td><td><strong>&lt;0.1%</strong></td></tr>
+        <tr><td>Recyclable at end of life</td><td>Partial</td><td>Yes</td><td><strong>100% buy-back</strong></td></tr>
+        <tr><td>BRSR impact data</td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="check">✓ Verified</span></td></tr>
+        <tr><td>Fumigation required</td><td><span class="cross">Required</span></td><td><span class="check">Not required</span></td><td><span class="check">Not required</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div style="text-align:center;margin-top:2.5rem">
+    <a href="#contact" class="btn-primary">Get my cost comparison →</a>
+  </div>
+</div>
+</section>
+
+<!-- INDUSTRIES -->
+<section id="industries" class="bg-cloud">
+<div class="section-inner">
+  <span class="section-tag">Built for your sector</span>
+  <h2 class="section-title">Pallets built around how your industry works.</h2>
+  <p class="section-sub">Every industry moves differently. STRUXO pallets are engineered to the real-world demands of India's most demanding supply chains.</p>
+  <div class="ind-tabs">
+    <button class="ind-tab active" onclick="showInd('fmcg',this)">FMCG</button>
+    <button class="ind-tab" onclick="showInd('pharma',this)">Pharmaceuticals</button>
+    <button class="ind-tab" onclick="showInd('warehouse',this)">Warehousing &amp; 3PL</button>
+    <button class="ind-tab" onclick="showInd('export',this)">Export &amp; Freight</button>
+    <button class="ind-tab" onclick="showInd('auto',this)">Automotive</button>
+    <button class="ind-tab" onclick="showInd('retail',this)">Retail</button>
+    <button class="ind-tab" onclick="showInd('mfg',this)">Manufacturing</button>
+  </div>
+  <div class="ind-panels">
+
+    <!-- FMCG -->
+    <div id="ind-fmcg" class="active">
+      <div class="ind-copy">
+        <h3>FMCG &amp; Consumer Goods</h3>
+        <p class="ind-challenge">"We track every pallet cycle. After switching to STRUXO, our per-trip cost dropped from ₹48 to ₹17."</p>
+        <p>FMCG supply chains run on volume, velocity, and margin. Every rupee spent on pallet replacement, product damage from splintering wood, and operational downtime is a rupee taken from your bottom line.</p>
+        <ul class="ind-bullets">
+          <li>60+ cycle life reduces pallet procurement frequency by 5×</li>
+          <li>Non-porous surface meets food safety and hygiene standards</li>
+          <li>No splinters — eliminates product damage and film punctures</li>
+          <li>Consistent dimensions improve rack utilisation and picking accuracy</li>
+          <li>Verified plastic diversion data for ESG and sustainability reporting</li>
+        </ul>
+        <a href="#contact" class="btn-primary" style="display:inline-flex">Get FMCG cost analysis →</a>
+      </div>
+      <div class="ind-scene">
+        <svg width="100%" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+          <!-- FMCG DISTRIBUTION CENTRE SCENE -->
+          <!-- Warehouse floor -->
+          <rect x="0" y="200" width="400" height="100" fill="#1e2820"/>
+          <!-- Floor markings -->
+          <rect x="0" y="198" width="400" height="3" fill="#2d3a2d"/>
+          <line x1="200" y1="200" x2="200" y2="300" stroke="rgba(255,220,0,.3)" stroke-width="2" stroke-dasharray="12,8"/>
+          <!-- Background wall -->
+          <rect x="0" y="0" width="400" height="200" fill="#141e14"/>
+          <!-- Ceiling lights -->
+          <rect x="40" y="8" width="60" height="5" rx="1" fill="rgba(255,255,200,.15)"/>
+          <rect x="170" y="8" width="60" height="5" rx="1" fill="rgba(255,255,200,.15)"/>
+          <rect x="300" y="8" width="60" height="5" rx="1" fill="rgba(255,255,200,.15)"/>
+
+          <!-- STRUXO PALLET 1 (centre, loaded with FMCG cartons) -->
+          <!-- Pallet base -->
+          <rect x="100" y="188" width="120" height="12" rx="2" fill="#1B4332"/>
+          <rect x="108" y="184" width="20" height="16" fill="#1B4332"/>
+          <rect x="148" y="184" width="20" height="16" fill="#1B4332"/>
+          <rect x="188" y="184" width="20" height="16" fill="#1B4332"/>
+          <!-- Entry gaps (pallet feet visible) -->
+          <rect x="128" y="186" width="20" height="14" fill="#0d1f10"/>
+          <rect x="168" y="186" width="20" height="14" fill="#0d1f10"/>
+          <!-- Goods layer 1 (bottom) -->
+          <rect x="102" y="152" width="116" height="36" rx="1" fill="#2d5a8a"/>
+          <!-- Box dividers -->
+          <line x1="141" y1="152" x2="141" y2="188" stroke="#1d4a7a" stroke-width="1"/>
+          <line x1="180" y1="152" x2="180" y2="188" stroke="#1d4a7a" stroke-width="1"/>
+          <!-- Product labels on boxes -->
+          <rect x="108" y="158" width="28" height="18" rx="1" fill="rgba(255,255,255,.08)"/>
+          <rect x="147" y="158" width="28" height="18" rx="1" fill="rgba(255,255,255,.08)"/>
+          <rect x="186" y="158" width="28" height="18" rx="1" fill="rgba(255,255,255,.08)"/>
+          <!-- Goods layer 2 -->
+          <rect x="106" y="118" width="108" height="34" rx="1" fill="#8a4a1a"/>
+          <line x1="145" y1="118" x2="145" y2="152" stroke="#6a3a10" stroke-width="1"/>
+          <line x1="181" y1="118" x2="181" y2="152" stroke="#6a3a10" stroke-width="1"/>
+          <!-- Goods layer 3 (top) -->
+          <rect x="110" y="90" width="100" height="28" rx="1" fill="#1a6a2a"/>
+          <line x1="143" y1="90" x2="143" y2="118" stroke="#145820" stroke-width="1"/>
+          <line x1="177" y1="90" x2="177" y2="118" stroke="#145820" stroke-width="1"/>
+          <!-- Shrink wrap indicator -->
+          <rect x="100" y="90" width="120" height="98" rx="2" fill="none" stroke="rgba(200,230,255,.15)" stroke-width="2"/>
+          <!-- STRUXO branding on pallet face -->
+          <text x="160" y="196" font-family="'Barlow Condensed',sans-serif" font-size="7" font-weight="900" fill="#52B788" text-anchor="middle" letter-spacing=".8">STRUXO</text>
+
+          <!-- SECOND PALLET (right, partial) -->
+          <rect x="270" y="188" width="110" height="12" rx="2" fill="#1B4332"/>
+          <rect x="275" y="152" width="105" height="36" rx="1" fill="#6a2a8a"/>
+          <rect x="278" y="118" width="99" height="34" rx="1" fill="#8a6a1a"/>
+          <rect x="282" y="95" width="91" height="23" rx="1" fill="#2a5a8a"/>
+          <rect x="270" y="184" width="20" height="16" fill="#1B4332"/>
+          <rect x="310" y="184" width="20" height="16" fill="#1B4332"/>
+          <rect x="290" y="186" width="20" height="14" fill="#0d1f10"/>
+
+          <!-- THIRD PALLET (left, partial) -->
+          <rect x="-10" y="188" width="110" height="12" rx="2" fill="#1B4332"/>
+          <rect x="-8" y="152" width="105" height="36" rx="1" fill="#5a3a1a"/>
+          <rect x="-5" y="118" width="99" height="34" rx="1" fill="#1a4a6a"/>
+          <rect x="-8" y="184" width="20" height="16" fill="#1B4332"/>
+          <rect x="30" y="184" width="20" height="16" fill="#1B4332"/>
+          <rect x="10" y="186" width="20" height="14" fill="#0d1f10"/>
+
+          <!-- Conveyor belt (background) -->
+          <rect x="140" y="160" width="120" height="2" fill="rgba(82,183,136,.1)" transform="rotate(-8,200,161)"/>
+
+          <!-- Worker silhouette -->
+          <ellipse cx="245" cy="158" rx="8" ry="8" fill="#2a3a2a"/>
+          <rect x="239" y="165" width="12" height="25" rx="3" fill="#2a3a2a"/>
+          <line x1="235" y1="175" x2="245" y2="182" stroke="#2a3a2a" stroke-width="3"/>
+          <line x1="255" y1="172" x2="248" y2="180" stroke="#2a3a2a" stroke-width="3"/>
+          <line x1="241" y1="190" x2="238" y2="205" stroke="#2a3a2a" stroke-width="3"/>
+          <line x1="249" y1="190" x2="252" y2="205" stroke="#2a3a2a" stroke-width="3"/>
+
+          <!-- "FMCG DISTRIBUTION" label -->
+          <text x="200" y="28" font-family="'Barlow Condensed',sans-serif" font-size="11" font-weight="700" fill="rgba(82,183,136,.4)" text-anchor="middle" letter-spacing="2">FMCG DISTRIBUTION CENTRE</text>
+        </svg>
+      </div>
+    </div>
+
+    <!-- PHARMA -->
+    <div id="ind-pharma">
+      <div class="ind-copy">
+        <h3>Pharmaceuticals</h3>
+        <p class="ind-challenge">Wooden pallets harbour moisture, mould, and microbial activity — a contamination risk in any GDP-compliant environment.</p>
+        <p>STRUXO pallets are non-porous, non-hygroscopic, and inert to pharmaceutical cleaning agents and disinfectants. They meet the hygiene requirements of GDP-compliant cold chain operations without compromise.</p>
+        <ul class="ind-bullets">
+          <li>Non-porous surface — no moisture absorption, no microbial harbouring</li>
+          <li>Compatible with pharmaceutical cleaning and disinfection protocols</li>
+          <li>No fumigation required — eliminates chemical contamination risk in clean rooms</li>
+          <li>Temp range: -30°C to +70°C — suitable for all pharma storage conditions</li>
+          <li>Lot-traceable with QR-coded pallet IDs on STRUXO FORM line</li>
+        </ul>
+        <a href="#contact" class="btn-primary" style="display:inline-flex">Pharma spec sheet →</a>
+      </div>
+      <div class="ind-scene">
+        <svg width="100%" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+          <!-- PHARMA CLEAN ROOM SCENE -->
+          <rect x="0" y="0" width="400" height="300" fill="#1a1e24"/>
+          <!-- Clean white walls/floor -->
+          <rect x="20" y="40" width="360" height="220" rx="4" fill="#1e2430"/>
+          <rect x="20" y="200" width="360" height="60" rx="0" fill="#222832"/>
+          <!-- Clean room grid ceiling -->
+          <line x1="20" y1="55" x2="380" y2="55" stroke="rgba(200,220,255,.08)" stroke-width="1"/>
+          <line x1="20" y1="70" x2="380" y2="70" stroke="rgba(200,220,255,.08)" stroke-width="1"/>
+          <line x1="80" y1="40" x2="80" y2="260" stroke="rgba(200,220,255,.05)" stroke-width="1"/>
+          <line x1="200" y1="40" x2="200" y2="260" stroke="rgba(200,220,255,.05)" stroke-width="1"/>
+          <line x1="320" y1="40" x2="320" y2="260" stroke="rgba(200,220,255,.05)" stroke-width="1"/>
+          <!-- Clean room lights (LED strips) -->
+          <rect x="60" y="44" width="80" height="8" rx="2" fill="rgba(220,240,255,.2)"/>
+          <rect x="260" y="44" width="80" height="8" rx="2" fill="rgba(220,240,255,.2)"/>
+          <!-- Cold room indicator -->
+          <rect x="340" y="45" width="35" height="20" rx="3" fill="rgba(100,160,220,.15)"/>
+          <text x="357" y="58" font-family="'Inter',sans-serif" font-size="7" fill="#90b8e0" text-anchor="middle">-20°C</text>
+
+          <!-- STRUXO PALLET (pharma) -->
+          <rect x="110" y="190" width="140" height="12" rx="2" fill="#1B4332"/>
+          <rect x="117" y="186" width="22" height="16" fill="#1B4332"/>
+          <rect x="158" y="186" width="26" height="16" fill="#1B4332"/>
+          <rect x="201" y="186" width="22" height="16" fill="#1B4332"/>
+          <rect x="139" y="188" width="19" height="14" fill="#0d1a0f"/>
+          <rect x="183" y="188" width="18" height="14" fill="#0d1a0f"/>
+
+          <!-- Pharma boxes (clean white) -->
+          <rect x="112" y="148" width="136" height="42" rx="2" fill="#dce8f0"/>
+          <line x1="156" y1="148" x2="156" y2="190" stroke="#c0d0de" stroke-width="1"/>
+          <line x1="201" y1="148" x2="201" y2="190" stroke="#c0d0de" stroke-width="1"/>
+          <!-- Pharma cross on boxes -->
+          <rect x="126" y="162" width="16" height="4" rx="1" fill="#e05555"/>
+          <rect x="132" y="156" width="4" height="16" rx="1" fill="#e05555"/>
+          <rect x="171" y="162" width="16" height="4" rx="1" fill="#e05555"/>
+          <rect x="177" y="156" width="4" height="16" rx="1" fill="#e05555"/>
+          <rect x="216" y="162" width="16" height="4" rx="1" fill="#e05555"/>
+          <rect x="222" y="156" width="4" height="16" rx="1" fill="#e05555"/>
+          <!-- Box labels -->
+          <text x="134" y="178" font-family="'Inter',sans-serif" font-size="5" fill="#6080a0" text-anchor="middle">Rx 001</text>
+          <text x="179" y="178" font-family="'Inter',sans-serif" font-size="5" fill="#6080a0" text-anchor="middle">Rx 002</text>
+          <text x="224" y="178" font-family="'Inter',sans-serif" font-size="5" fill="#6080a0" text-anchor="middle">Rx 003</text>
+          <!-- Second layer -->
+          <rect x="116" y="112" width="128" height="36" rx="2" fill="#e8f0f8"/>
+          <line x1="158" y1="112" x2="158" y2="148" stroke="#d0dce8" stroke-width="1"/>
+          <line x1="202" y1="112" x2="202" y2="148" stroke="#d0dce8" stroke-width="1"/>
+          <rect x="130" y="124" width="12" height="3" rx="1" fill="#c05050"/>
+          <rect x="133" y="118" width="3" height="12" rx="1" fill="#c05050"/>
+          <rect x="174" y="124" width="12" height="3" rx="1" fill="#c05050"/>
+          <rect x="177" y="118" width="3" height="12" rx="1" fill="#c05050"/>
+
+          <!-- GMP badge -->
+          <rect x="48" y="165" width="52" height="30" rx="4" fill="rgba(100,160,220,.15)" stroke="rgba(100,160,220,.3)" stroke-width="1"/>
+          <text x="74" y="177" font-family="'Barlow Condensed',sans-serif" font-size="9" font-weight="700" fill="#90b8e0" text-anchor="middle">GDP</text>
+          <text x="74" y="188" font-family="'Inter',sans-serif" font-size="6" fill="#90b8e0" text-anchor="middle">COMPLIANT</text>
+
+          <!-- Temp monitor -->
+          <rect x="295" y="140" width="65" height="55" rx="4" fill="#1a2030" stroke="rgba(100,160,220,.2)" stroke-width="1"/>
+          <text x="327" y="158" font-family="'Barlow Condensed',sans-serif" font-size="14" font-weight="900" fill="#52c8a0" text-anchor="middle">-18°C</text>
+          <text x="327" y="170" font-family="'Inter',sans-serif" font-size="6" fill="rgba(100,160,220,.6)" text-anchor="middle">COLD CHAIN</text>
+          <rect x="305" y="175" width="44" height="6" rx="3" fill="rgba(82,183,136,.15)"/>
+          <rect x="305" y="175" width="36" height="6" rx="3" fill="rgba(82,183,136,.5)"/>
+          <text x="327" y="188" font-family="'Inter',sans-serif" font-size="5.5" fill="rgba(100,160,220,.5)" text-anchor="middle">Humidity: 45% RH</text>
+
+          <text x="200" y="24" font-family="'Barlow Condensed',sans-serif" font-size="11" font-weight="700" fill="rgba(144,184,224,.3)" text-anchor="middle" letter-spacing="2">PHARMACEUTICAL COLD CHAIN</text>
+
+          <!-- STRUXO label on pallet -->
+          <text x="180" y="198" font-family="'Barlow Condensed',sans-serif" font-size="7" font-weight="900" fill="#52B788" text-anchor="middle" letter-spacing=".8">STRUXO</text>
+        </svg>
+      </div>
+    </div>
+
+    <!-- WAREHOUSE -->
+    <div id="ind-warehouse">
+      <div class="ind-copy">
+        <h3>Warehousing &amp; 3PL</h3>
+        <p class="ind-challenge">Warped wooden pallets failing rack inspections. Forklift tine damage from splintered wood. A constant cycle of replacement purchase orders.</p>
+        <p>STRUXO's consistent geometry, high load ratings, and long cycle life turn the pallet from a recurring cost into a long-term asset — one that outperforms wood across every operational metric.</p>
+        <ul class="ind-bullets">
+          <li>Consistent dimensions improve rack utilisation and reduce incidents</li>
+          <li>No moisture warping — maintains geometry through seasonal cycles</li>
+          <li>Long cycle life reduces SKU count for pallet procurement</li>
+          <li>Higher load ratings allow denser racking configurations</li>
+          <li>End-of-life buy-back reduces pallet disposal cost</li>
+        </ul>
+        <a href="#contact" class="btn-primary" style="display:inline-flex">Warehouse ROI analysis →</a>
+      </div>
+      <div class="ind-scene">
+        <svg width="100%" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+          <!-- HIGH-DENSITY RACKING SCENE (perspective) -->
+          <rect x="0" y="0" width="400" height="300" fill="#111a11"/>
+          <rect x="0" y="220" width="400" height="80" fill="#1a2a1a"/>
+          <!-- Back wall -->
+          <rect x="100" y="0" width="200" height="220" fill="#141e14"/>
+          <!-- Perspective floor -->
+          <polygon points="0,220 400,220 300,280 100,280" fill="#1e2e1e"/>
+          <!-- Ceiling lights strip -->
+          <rect x="0" y="0" width="400" height="20" fill="#0e160e"/>
+          <rect x="30" y="5" width="50" height="6" rx="1" fill="rgba(255,255,200,.12)"/>
+          <rect x="175" y="5" width="50" height="6" rx="1" fill="rgba(255,255,200,.12)"/>
+          <rect x="320" y="5" width="50" height="6" rx="1" fill="rgba(255,255,200,.12)"/>
+
+          <!-- LEFT RACKING SYSTEM (4 shelf levels) -->
+          <!-- Uprights -->
+          <rect x="0" y="20" width="6" height="200" fill="#3a4e3a"/>
+          <rect x="95" y="20" width="6" height="200" fill="#3a4e3a"/>
+          <!-- Shelves -->
+          <rect x="0" y="60" width="101" height="4" fill="#4a5e4a"/>
+          <rect x="0" y="105" width="101" height="4" fill="#4a5e4a"/>
+          <rect x="0" y="150" width="101" height="4" fill="#4a5e4a"/>
+          <rect x="0" y="195" width="101" height="4" fill="#4a5e4a"/>
+          <!-- Pallets left rack - each shelf -->
+          <!-- Shelf 4 (top) -->
+          <rect x="4" y="48" width="44" height="12" rx="1" fill="#1B4332"/>
+          <rect x="6" y="28" width="40" height="20" rx="1" fill="#2d5240"/>
+          <rect x="52" y="48" width="43" height="12" rx="1" fill="#1B4332"/>
+          <rect x="54" y="30" width="39" height="18" rx="1" fill="#2a4e3c"/>
+          <!-- Shelf 3 -->
+          <rect x="4" y="93" width="44" height="12" rx="1" fill="#1B4332"/>
+          <rect x="6" y="70" width="40" height="23" rx="1" fill="#5a3a1a"/>
+          <rect x="52" y="93" width="43" height="12" rx="1" fill="#1B4332"/>
+          <rect x="54" y="72" width="39" height="21" rx="1" fill="#4a5a2a"/>
+          <!-- Shelf 2 -->
+          <rect x="4" y="138" width="44" height="12" rx="1" fill="#1B4332"/>
+          <rect x="6" y="112" width="40" height="26" rx="1" fill="#1a3a5a"/>
+          <rect x="52" y="138" width="43" height="12" rx="1" fill="#1B4332"/>
+          <rect x="54" y="115" width="39" height="23" rx="1" fill="#2a1a5a"/>
+          <!-- Shelf 1 (floor) -->
+          <rect x="4" y="183" width="44" height="12" rx="1" fill="#1B4332"/>
+          <rect x="6" y="160" width="40" height="23" rx="1" fill="#3a2a1a"/>
+          <rect x="52" y="183" width="43" height="12" rx="1" fill="#1B4332"/>
+          <rect x="54" y="162" width="39" height="21" rx="1" fill="#1a3a2a"/>
+
+          <!-- RIGHT RACKING SYSTEM -->
+          <rect x="299" y="20" width="6" height="200" fill="#3a4e3a"/>
+          <rect x="394" y="20" width="6" height="200" fill="#3a4e3a"/>
+          <rect x="299" y="60" width="101" height="4" fill="#4a5e4a"/>
+          <rect x="299" y="105" width="101" height="4" fill="#4a5e4a"/>
+          <rect x="299" y="150" width="101" height="4" fill="#4a5e4a"/>
+          <rect x="299" y="195" width="101" height="4" fill="#4a5e4a"/>
+          <rect x="303" y="48" width="44" height="12" rx="1" fill="#1B4332"/>
+          <rect x="305" y="30" width="40" height="18" rx="1" fill="#2d5240"/>
+          <rect x="351" y="48" width="43" height="12" rx="1" fill="#1B4332"/>
+          <rect x="353" y="32" width="39" height="16" rx="1" fill="#2a4e3c"/>
+          <rect x="303" y="93" width="44" height="12" rx="1" fill="#1B4332"/>
+          <rect x="305" y="72" width="40" height="21" rx="1" fill="#5a3a1a"/>
+          <rect x="351" y="93" width="43" height="12" rx="1" fill="#1B4332"/>
+          <rect x="353" y="74" width="39" height="19" rx="1" fill="#4a3a2a"/>
+          <rect x="303" y="138" width="44" height="12" rx="1" fill="#1B4332"/>
+          <rect x="305" y="114" width="40" height="24" rx="1" fill="#1a3a5a"/>
+          <rect x="351" y="138" width="43" height="12" rx="1" fill="#1B4332"/>
+          <rect x="353" y="116" width="39" height="22" rx="1" fill="#2a2a5a"/>
+          <rect x="303" y="183" width="44" height="12" rx="1" fill="#1B4332"/>
+          <rect x="305" y="162" width="40" height="21" rx="1" fill="#3a2a1a"/>
+          <rect x="351" y="183" width="43" height="12" rx="1" fill="#1B4332"/>
+          <rect x="353" y="164" width="39" height="19" rx="1" fill="#1a3a1a"/>
+
+          <!-- CENTRE AISLE: Forklift -->
+          <rect x="164" y="168" width="52" height="32" rx="2" fill="#c8960e"/>
+          <rect x="172" y="148" width="36" height="24" rx="2" fill="#a87a0a"/>
+          <rect x="175" y="151" width="22" height="14" rx="1" fill="rgba(180,220,255,.2)"/>
+          <rect x="156" y="100" width="5" height="80" fill="#808070"/>
+          <rect x="163" y="104" width="5" height="76" fill="#808070"/>
+          <rect x="148" y="164" width="18" height="4" rx="1" fill="#505040"/>
+          <rect x="148" y="172" width="18" height="4" rx="1" fill="#505040"/>
+          <ellipse cx="172" cy="200" rx="10" ry="10" fill="#1a1a1a"/>
+          <ellipse cx="172" cy="200" rx="5" ry="5" fill="#333"/>
+          <ellipse cx="208" cy="200" rx="10" ry="10" fill="#1a1a1a"/>
+          <ellipse cx="208" cy="200" rx="5" ry="5" fill="#333"/>
+          <!-- Pallet being carried -->
+          <rect x="146" y="158" width="22" height="6" rx="1" fill="#1B4332"/>
+
+          <!-- Height indicators on rack -->
+          <text x="108" y="68" font-family="'Inter',sans-serif" font-size="6" fill="rgba(82,183,136,.5)" text-anchor="middle">L4</text>
+          <text x="108" y="113" font-family="'Inter',sans-serif" font-size="6" fill="rgba(82,183,136,.5)" text-anchor="middle">L3</text>
+          <text x="108" y="158" font-family="'Inter',sans-serif" font-size="6" fill="rgba(82,183,136,.5)" text-anchor="middle">L2</text>
+          <text x="108" y="203" font-family="'Inter',sans-serif" font-size="6" fill="rgba(82,183,136,.5)" text-anchor="middle">L1</text>
+
+          <text x="200" y="18" font-family="'Barlow Condensed',sans-serif" font-size="10" font-weight="700" fill="rgba(82,183,136,.25)" text-anchor="middle" letter-spacing="2">HIGH-DENSITY WAREHOUSE RACKING</text>
+        </svg>
+      </div>
+    </div>
+
+    <!-- EXPORT -->
+    <div id="ind-export">
+      <div class="ind-copy">
+        <h3>Export &amp; Freight</h3>
+        <p class="ind-challenge">Every wooden pallet crossing an international border requires fumigation under ISPM 15 — cost, time, and bureaucracy that STRUXO eliminates entirely.</p>
+        <p>STRUXO plastic pallets are exempt from ISPM 15 requirements. They move through customs without fumigation certificates, arrive at destination in the same condition they left, and come back ready for the next consignment.</p>
+        <ul class="ind-bullets">
+          <li>ISPM 15 exempt — no fumigation cost or phytosanitary certificate delay</li>
+          <li>Accepted in all major export markets without special certification</li>
+          <li>Consistent dimensions maximise container fill — more cargo per container</li>
+          <li>Lighter than wood — reduces freight weight for air cargo</li>
+          <li>Returnable pallet programmes for closed-loop export-import routes</li>
+        </ul>
+        <a href="#contact" class="btn-primary" style="display:inline-flex">Export pallet spec →</a>
+      </div>
+      <div class="ind-scene">
+        <svg width="100%" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+          <!-- EXPORT / SHIPPING CONTAINER SCENE -->
+          <rect x="0" y="0" width="400" height="300" fill="#0e1620"/>
+          <!-- Sky gradient (port scene) -->
+          <rect x="0" y="0" width="400" height="120" fill="#0d1826"/>
+          <!-- Port dock floor -->
+          <rect x="0" y="200" width="400" height="100" fill="#1a2030"/>
+          <!-- Dock markings -->
+          <line x1="0" y1="200" x2="400" y2="200" stroke="#2a3a50" stroke-width="2"/>
+          <rect x="60" y="202" width="30" height="3" fill="rgba(255,200,0,.2)"/>
+          <rect x="140" y="202" width="30" height="3" fill="rgba(255,200,0,.2)"/>
+          <rect x="220" y="202" width="30" height="3" fill="rgba(255,200,0,.2)"/>
+          <rect x="300" y="202" width="30" height="3" fill="rgba(255,200,0,.2)"/>
+
+          <!-- SHIPPING CONTAINER (open doors showing interior) -->
+          <!-- Container body -->
+          <rect x="40" y="60" width="250" height="140" rx="2" fill="#1e3a5a"/>
+          <!-- Container corrugations (vertical lines) -->
+          <line x1="62" y1="60" x2="62" y2="200" stroke="rgba(255,255,255,.05)" stroke-width="2"/>
+          <line x1="84" y1="60" x2="84" y2="200" stroke="rgba(255,255,255,.05)" stroke-width="2"/>
+          <line x1="106" y1="60" x2="106" y2="200" stroke="rgba(255,255,255,.05)" stroke-width="2"/>
+          <line x1="128" y1="60" x2="128" y2="200" stroke="rgba(255,255,255,.05)" stroke-width="2"/>
+          <line x1="150" y1="60" x2="150" y2="200" stroke="rgba(255,255,255,.05)" stroke-width="2"/>
+          <line x1="172" y1="60" x2="172" y2="200" stroke="rgba(255,255,255,.05)" stroke-width="2"/>
+          <line x1="194" y1="60" x2="194" y2="200" stroke="rgba(255,255,255,.05)" stroke-width="2"/>
+          <line x1="216" y1="60" x2="216" y2="200" stroke="rgba(255,255,255,.05)" stroke-width="2"/>
+          <line x1="238" y1="60" x2="238" y2="200" stroke="rgba(255,255,255,.05)" stroke-width="2"/>
+          <!-- Container interior (open) -->
+          <rect x="42" y="62" width="246" height="136" fill="#141e2e"/>
+          <!-- Container floor -->
+          <rect x="42" y="186" width="246" height="12" fill="#1a2840"/>
+          <!-- Container ceiling -->
+          <rect x="42" y="62" width="246" height="10" fill="#1a2840"/>
+          <!-- Container side walls -->
+          <rect x="42" y="62" width="10" height="136" fill="#1a2840"/>
+
+          <!-- STRUXO PALLETS INSIDE CONTAINER -->
+          <!-- Row 1 of pallets (back of container) -->
+          <rect x="58" y="164" width="55" height="8" rx="1" fill="#1B4332"/>
+          <rect x="60" y="130" width="51" height="34" rx="1" fill="#2d5a80"/>
+          <rect x="60" y="120" width="51" height="14" rx="1" fill="#3568a0"/>
+          <text x="85" y="174" font-family="'Barlow Condensed',sans-serif" font-size="5.5" font-weight="900" fill="#52B788" text-anchor="middle">STRUXO</text>
+
+          <rect x="118" y="164" width="55" height="8" rx="1" fill="#1B4332"/>
+          <rect x="120" y="130" width="51" height="34" rx="1" fill="#5a2d2d"/>
+          <rect x="120" y="120" width="51" height="14" rx="1" fill="#702020"/>
+          <text x="145" y="174" font-family="'Barlow Condensed',sans-serif" font-size="5.5" font-weight="900" fill="#52B788" text-anchor="middle">STRUXO</text>
+
+          <rect x="178" y="164" width="55" height="8" rx="1" fill="#1B4332"/>
+          <rect x="180" y="130" width="51" height="34" rx="1" fill="#2d5a2d"/>
+          <rect x="180" y="120" width="51" height="14" rx="1" fill="#205520"/>
+          <text x="205" y="174" font-family="'Barlow Condensed',sans-serif" font-size="5.5" font-weight="900" fill="#52B788" text-anchor="middle">STRUXO</text>
+
+          <!-- Second row of pallets (front, partial) -->
+          <rect x="58" y="118" width="55" height="8" rx="1" fill="#1B4332"/>
+          <rect x="60" y="94" width="51" height="24" rx="1" fill="#3a4a6a"/>
+          <rect x="118" y="118" width="55" height="8" rx="1" fill="#1B4332"/>
+          <rect x="120" y="94" width="51" height="24" rx="1" fill="#6a3a3a"/>
+          <rect x="178" y="118" width="55" height="8" rx="1" fill="#1B4332"/>
+          <rect x="180" y="94" width="51" height="24" rx="1" fill="#3a6a3a"/>
+
+          <!-- Container doors (open/swung out) -->
+          <!-- Left door (swung back) -->
+          <polygon points="40,60 40,200 25,195 25,65" fill="#1e4a7a" stroke="#2a5a8a" stroke-width="1"/>
+          <!-- Right door (swung back) -->
+          <polygon points="290,60 290,200 305,195 305,65" fill="#1e4a7a" stroke="#2a5a8a" stroke-width="1"/>
+          <!-- Door handles/locks -->
+          <rect x="30" y="120" width="4" height="20" rx="1" fill="#4a7aaa"/>
+          <rect x="296" y="120" width="4" height="20" rx="1" fill="#4a7aaa"/>
+
+          <!-- ISPM 15 EXEMPT sticker on pallet -->
+          <rect x="235" y="155" width="48" height="16" rx="2" fill="#52B788"/>
+          <text x="259" y="161" font-family="'Inter',sans-serif" font-size="5" font-weight="700" fill="#0d2218" text-anchor="middle">ISPM 15</text>
+          <text x="259" y="168" font-family="'Inter',sans-serif" font-size="5" font-weight="700" fill="#0d2218" text-anchor="middle">EXEMPT ✓</text>
+
+          <!-- Crane hook (port) -->
+          <line x1="340" y1="0" x2="340" y2="55" stroke="#3a5a7a" stroke-width="2" stroke-dasharray="5,3"/>
+          <polygon points="332,45 348,45 344,60 336,60" fill="#4a6a8a"/>
+          <rect x="336" y="60" width="8" height="4" fill="#5a7a9a"/>
+
+          <!-- Port label -->
+          <text x="360" y="100" font-family="'Barlow Condensed',sans-serif" font-size="9" font-weight="700" fill="rgba(82,183,136,.35)" text-anchor="middle" writing-mode="tb">EXPORT PORT</text>
+          <text x="200" y="24" font-family="'Barlow Condensed',sans-serif" font-size="11" font-weight="700" fill="rgba(82,183,136,.25)" text-anchor="middle" letter-spacing="2">EXPORT &amp; CONTAINER LOADING</text>
+        </svg>
+      </div>
+    </div>
+
+    <!-- AUTOMOTIVE -->
+    <div id="ind-auto">
+      <div class="ind-copy">
+        <h3>Automotive</h3>
+        <p class="ind-challenge">Wooden pallets introduce FOD risk (Foreign Object Debris) — splinters, nails, and wood fragments that cannot enter automotive assembly environments.</p>
+        <p>STRUXO pallets deliver the dimensional consistency, clean surface profile, and load performance that automotive OEMs and tier suppliers require — with zero FOD risk and no contamination from wood debris.</p>
+        <ul class="ind-bullets">
+          <li>Zero FOD risk — no splinters, nails, or wood debris in assembly environments</li>
+          <li>High static load for engine, transmission, and pressed body panel storage</li>
+          <li>Custom STRUXO FORM options for component-specific cradles</li>
+          <li>Compatible with AGV and automated guided vehicle systems</li>
+          <li>Meets automotive supplier quality requirements (IATF 16949-compatible)</li>
+        </ul>
+        <a href="#contact" class="btn-primary" style="display:inline-flex">Automotive spec brief →</a>
+      </div>
+      <div class="ind-scene">
+        <svg width="100%" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+          <!-- AUTOMOTIVE PLANT SCENE -->
+          <rect x="0" y="0" width="400" height="300" fill="#16181a"/>
+          <rect x="0" y="220" width="400" height="80" fill="#1c1e22"/>
+          <!-- Factory floor markings -->
+          <line x1="0" y1="220" x2="400" y2="220" stroke="#2a2e35" stroke-width="2"/>
+          <line x1="160" y1="220" x2="160" y2="300" stroke="rgba(255,200,0,.25)" stroke-width="1.5" stroke-dasharray="10,6"/>
+          <line x1="240" y1="220" x2="240" y2="300" stroke="rgba(255,200,0,.25)" stroke-width="1.5" stroke-dasharray="10,6"/>
+          <!-- Industrial ceiling -->
+          <rect x="0" y="0" width="400" height="25" fill="#101214"/>
+          <rect x="20" y="6" width="40" height="6" rx="1" fill="rgba(255,255,200,.1)"/>
+          <rect x="180" y="6" width="40" height="6" rx="1" fill="rgba(255,255,200,.1)"/>
+          <rect x="340" y="6" width="40" height="6" rx="1" fill="rgba(255,255,200,.1)"/>
+          <!-- Overhead rail/gantry -->
+          <rect x="0" y="25" width="400" height="8" fill="#1e2228"/>
+          <rect x="0" y="28" width="400" height="2" fill="#2a3040"/>
+
+          <!-- STRUXO PALLET (heavy duty, automotive parts) -->
+          <!-- Pallet base -->
+          <rect x="80" y="207" width="160" height="14" rx="2" fill="#1B4332"/>
+          <rect x="88" y="202" width="25" height="19" fill="#1B4332"/>
+          <rect x="148" y="202" width="28" height="19" fill="#1B4332"/>
+          <rect x="207" y="202" width="25" height="19" fill="#1B4332"/>
+          <rect x="113" y="204" width="35" height="17" fill="#0d1f10"/>
+          <rect x="175" y="204" width="32" height="17" fill="#0d1f10"/>
+          <!-- ENGINE BLOCK on pallet -->
+          <!-- Engine block base -->
+          <rect x="96" y="148" width="128" height="59" rx="3" fill="#4a5060"/>
+          <!-- Engine block detail -->
+          <rect x="100" y="153" width="120" height="10" rx="1" fill="#5a6070"/>
+          <rect x="104" y="163" width="32" height="40" rx="2" fill="#404850"/>
+          <rect x="140" y="163" width="36" height="40" rx="2" fill="#404850"/>
+          <rect x="180" y="163" width="32" height="40" rx="2" fill="#404850"/>
+          <!-- Cylinder heads -->
+          <ellipse cx="120" cy="165" rx="12" ry="6" fill="#6a7080"/>
+          <ellipse cx="158" cy="165" rx="12" ry="6" fill="#6a7080"/>
+          <ellipse cx="196" cy="165" rx="12" ry="6" fill="#6a7080"/>
+          <!-- Engine bolts -->
+          <circle cx="106" cy="170" r="2.5" fill="#888"/>
+          <circle cx="106" cy="185" r="2.5" fill="#888"/>
+          <circle cx="106" cy="200" r="2.5" fill="#888"/>
+          <circle cx="214" cy="170" r="2.5" fill="#888"/>
+          <circle cx="214" cy="185" r="2.5" fill="#888"/>
+          <circle cx="214" cy="200" r="2.5" fill="#888"/>
+          <!-- Serial plate on engine -->
+          <rect x="130" y="178" width="60" height="16" rx="2" fill="#303540"/>
+          <text x="160" y="188" font-family="'Inter',sans-serif" font-size="6" fill="#8090a0" text-anchor="middle">ENGINE 4CYL</text>
+          <text x="160" y="196" font-family="'Inter',sans-serif" font-size="5" fill="#6080a0" text-anchor="middle">LOT: AUT-2024-088</text>
+
+          <!-- STRUXO branding on pallet -->
+          <text x="160" y="216" font-family="'Barlow Condensed',sans-serif" font-size="8" font-weight="900" fill="#52B788" text-anchor="middle" letter-spacing="1">STRUXO</text>
+
+          <!-- FOD FREE badge -->
+          <rect x="20" y="165" width="54" height="28" rx="4" fill="rgba(82,183,136,.12)" stroke="rgba(82,183,136,.3)" stroke-width="1"/>
+          <text x="47" y="176" font-family="'Barlow Condensed',sans-serif" font-size="9" font-weight="700" fill="#52B788" text-anchor="middle">FOD FREE</text>
+          <text x="47" y="186" font-family="'Inter',sans-serif" font-size="5.5" fill="rgba(82,183,136,.7)" text-anchor="middle">Zero debris risk</text>
+
+          <!-- Robot arm (right side) -->
+          <rect x="310" y="50" width="12" height="120" rx="3" fill="#2a3040"/>
+          <rect x="296" y="150" width="30" height="10" rx="2" fill="#2a3040"/>
+          <rect x="280" y="155" width="20" height="6" rx="2" fill="#3a4050"/>
+          <!-- Assembly line belt (left) -->
+          <rect x="20" y="215" width="60" height="6" rx="1" fill="#1e2830"/>
+          <rect x="20" y="215" width="60" height="6" rx="1" fill="none" stroke="#2a3840" stroke-width="1"/>
+
+          <!-- Second pallet (back) with transmission -->
+          <rect x="290" y="210" width="90" height="10" rx="2" fill="#1B4332"/>
+          <rect x="292" y="175" width="86" height="35" rx="2" fill="#3a3a4a"/>
+          <rect x="296" y="158" width="78" height="22" rx="2" fill="#4a4a5a"/>
+          <circle cx="310" cy="170" r="8" fill="#5a5a6a"/>
+          <circle cx="335" cy="170" r="8" fill="#5a5a6a"/>
+          <circle cx="360" cy="170" r="8" fill="#5a5a6a"/>
+          <text x="335" y="195" font-family="'Inter',sans-serif" font-size="6" fill="#8080a0" text-anchor="middle">TRANSMISSION</text>
+
+          <text x="200" y="18" font-family="'Barlow Condensed',sans-serif" font-size="10" font-weight="700" fill="rgba(82,183,136,.2)" text-anchor="middle" letter-spacing="2">AUTOMOTIVE ASSEMBLY PLANT</text>
+        </svg>
+      </div>
+    </div>
+
+    <!-- RETAIL -->
+    <div id="ind-retail">
+      <div class="ind-copy">
+        <h3>Retail &amp; Modern Trade</h3>
+        <p class="ind-challenge">Automated retail distribution centres need dimensional consistency as a system requirement — not a preference.</p>
+        <p>STRUXO pallets deliver consistent, clean, professional-grade pallets that perform in the back-of-house automated system and look right on the retail floor for in-store palletised displays.</p>
+        <ul class="ind-bullets">
+          <li>Consistent dimensions for seamless automated DC operation</li>
+          <li>Clean surface profile — appropriate for in-store palletised display</li>
+          <li>Non-porous and hygienic for food retail and perishables</li>
+          <li>Available in custom colours for branded pallet programmes</li>
+          <li>Long cycle life reduces DC pallet procurement and management cost</li>
+        </ul>
+        <a href="#contact" class="btn-primary" style="display:inline-flex">Retail cost analysis →</a>
+      </div>
+      <div class="ind-scene">
+        <svg width="100%" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+          <!-- RETAIL / MODERN TRADE SCENE -->
+          <rect x="0" y="0" width="400" height="300" fill="#f5f5f0"/>
+          <rect x="0" y="240" width="400" height="60" fill="#e8e8e2"/>
+          <!-- Store ceiling -->
+          <rect x="0" y="0" width="400" height="30" fill="#f0f0ea"/>
+          <!-- Store lights (bright, retail style) -->
+          <rect x="30" y="8" width="60" height="6" rx="2" fill="rgba(255,255,200,.5)"/>
+          <rect x="170" y="8" width="60" height="6" rx="2" fill="rgba(255,255,200,.5)"/>
+          <rect x="310" y="8" width="60" height="6" rx="2" fill="rgba(255,255,200,.5)"/>
+          <!-- Floor line -->
+          <line x1="0" y1="240" x2="400" y2="240" stroke="#d0d0c8" stroke-width="1"/>
+
+          <!-- PRODUCT DISPLAY ON STRUXO PALLET (centre) -->
+          <!-- STRUXO pallet (note: custom BLUE color for branded programme) -->
+          <rect x="100" y="226" width="160" height="14" rx="2" fill="#1B4332"/>
+          <rect x="110" y="222" width="22" height="18" fill="#1B4332"/>
+          <rect x="152" y="222" width="26" height="18" fill="#1B4332"/>
+          <rect x="196" y="222" width="22" height="18" fill="#1B4332"/>
+          <rect x="132" y="224" width="20" height="16" fill="#0d1f10"/>
+          <rect x="178" y="224" width="18" height="16" fill="#0d1f10"/>
+          <!-- Product display blocks (consumer goods) -->
+          <rect x="102" y="182" width="156" height="44" rx="2" fill="#e83030"/>
+          <line x1="154" y1="182" x2="154" y2="226" stroke="#c82020" stroke-width="1.5"/>
+          <line x1="206" y1="182" x2="206" y2="226" stroke="#c82020" stroke-width="1.5"/>
+          <text x="128" y="208" font-family="'Barlow Condensed',sans-serif" font-size="11" font-weight="900" fill="white" text-anchor="middle">SALE</text>
+          <text x="128" y="218" font-family="'Inter',sans-serif" font-size="6" fill="rgba(255,255,255,.8)" text-anchor="middle">₹599</text>
+          <text x="180" y="208" font-family="'Barlow Condensed',sans-serif" font-size="11" font-weight="900" fill="white" text-anchor="middle">NEW</text>
+          <text x="180" y="218" font-family="'Inter',sans-serif" font-size="6" fill="rgba(255,255,255,.8)" text-anchor="middle">PACK</text>
+          <text x="232" y="208" font-family="'Barlow Condensed',sans-serif" font-size="11" font-weight="900" fill="white" text-anchor="middle">BIG</text>
+          <text x="232" y="218" font-family="'Inter',sans-serif" font-size="6" fill="rgba(255,255,255,.8)" text-anchor="middle">VALUE</text>
+          <!-- Second layer -->
+          <rect x="110" y="148" width="140" height="34" rx="2" fill="#e87030"/>
+          <line x1="157" y1="148" x2="157" y2="182" stroke="#c85020" stroke-width="1.5"/>
+          <line x1="204" y1="148" x2="204" y2="182" stroke="#c85020" stroke-width="1.5"/>
+          <!-- Third layer -->
+          <rect x="118" y="118" width="124" height="30" rx="2" fill="#30a8e8"/>
+          <line x1="163" y1="118" x2="163" y2="148" stroke="#2090c8" stroke-width="1.5"/>
+          <line x1="208" y1="118" x2="208" y2="148" stroke="#2090c8" stroke-width="1.5"/>
+          <!-- Price sign -->
+          <rect x="136" y="80" width="88" height="32" rx="4" fill="#e83030"/>
+          <text x="180" y="96" font-family="'Barlow Condensed',sans-serif" font-size="14" font-weight="900" fill="white" text-anchor="middle">SPECIAL OFFER</text>
+          <text x="180" y="108" font-family="'Barlow Condensed',sans-serif" font-size="11" font-weight="700" fill="rgba(255,255,200,.9)" text-anchor="middle">BUY 2 GET 1 FREE</text>
+          <!-- Sign pole -->
+          <rect x="178" y="108" width="4" height="12" fill="#c82020"/>
+
+          <!-- Background shelving units -->
+          <rect x="0" y="50" width="80" height="190" fill="#f0f0ea"/>
+          <rect x="0" y="90" width="80" height="3" fill="#d8d8d0"/>
+          <rect x="0" y="130" width="80" height="3" fill="#d8d8d0"/>
+          <rect x="0" y="170" width="80" height="3" fill="#d8d8d0"/>
+          <rect x="0" y="210" width="80" height="3" fill="#d8d8d0"/>
+          <rect x="5" y="60" width="70" height="28" rx="1" fill="#e8d8d0"/>
+          <rect x="5" y="95" width="70" height="32" rx="1" fill="#d8e0e8"/>
+          <rect x="5" y="133" width="70" height="34" rx="1" fill="#e0e8d0"/>
+          <rect x="5" y="173" width="70" height="34" rx="1" fill="#e8e0c0"/>
+
+          <rect x="320" y="50" width="80" height="190" fill="#f0f0ea"/>
+          <rect x="320" y="90" width="80" height="3" fill="#d8d8d0"/>
+          <rect x="320" y="130" width="80" height="3" fill="#d8d8d0"/>
+          <rect x="320" y="170" width="80" height="3" fill="#d8d8d0"/>
+          <rect x="325" y="60" width="70" height="28" rx="1" fill="#d0d8e8"/>
+          <rect x="325" y="95" width="70" height="32" rx="1" fill="#e8d0e0"/>
+          <rect x="325" y="133" width="70" height="34" rx="1" fill="#d8e8d8"/>
+          <rect x="325" y="173" width="70" height="34" rx="1" fill="#e8dcc8"/>
+
+          <!-- STRUXO label on pallet (clean, professional) -->
+          <text x="180" y="234" font-family="'Barlow Condensed',sans-serif" font-size="7" font-weight="900" fill="#52B788" text-anchor="middle" letter-spacing=".8">STRUXO</text>
+
+          <text x="200" y="20" font-family="'Barlow Condensed',sans-serif" font-size="10" font-weight="700" fill="rgba(100,150,100,.4)" text-anchor="middle" letter-spacing="2">MODERN TRADE RETAIL</text>
+        </svg>
+      </div>
+    </div>
+
+    <!-- MANUFACTURING -->
+    <div id="ind-mfg">
+      <div class="ind-copy">
+        <h3>Manufacturing</h3>
+        <p class="ind-challenge">The cumulative cost of wooden pallet replacement, maintenance, and disposal across a large manufacturing campus is substantial — and mostly invisible in P&amp;L tracking.</p>
+        <p>STRUXO pallets are the industrial-grade solution for manufacturing environments that demand performance, chemical compatibility, and consistent inter-process material flow.</p>
+        <ul class="ind-bullets">
+          <li>Chemical-resistant surface compatible with oils, lubricants, and solvents</li>
+          <li>High cycle life reduces procurement and logistics administrative overhead</li>
+          <li>Non-porous — easy decontamination between production runs</li>
+          <li>Custom STRUXO FORM for process-specific material carriers</li>
+          <li>End-of-life buy-back simplifies pallet management at plant level</li>
+        </ul>
+        <a href="#contact" class="btn-primary" style="display:inline-flex">Manufacturing brief →</a>
+      </div>
+      <div class="ind-scene">
+        <svg width="100%" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+          <!-- MANUFACTURING PLANT SCENE -->
+          <rect x="0" y="0" width="400" height="300" fill="#141618"/>
+          <rect x="0" y="230" width="400" height="70" fill="#181c1e"/>
+          <line x1="0" y1="230" x2="400" y2="230" stroke="#20282a" stroke-width="2"/>
+          <!-- Safety markings -->
+          <rect x="130" y="232" width="140" height="3" fill="rgba(255,200,0,.2)"/>
+          <!-- Industrial ceiling -->
+          <rect x="0" y="0" width="400" height="22" fill="#0e1012"/>
+          <rect x="15" y="5" width="45" height="6" rx="1" fill="rgba(255,180,50,.1)"/>
+          <rect x="180" y="5" width="45" height="6" rx="1" fill="rgba(255,180,50,.1)"/>
+          <rect x="345" y="5" width="45" height="6" rx="1" fill="rgba(255,180,50,.1)"/>
+
+          <!-- STRUXO PALLET with industrial goods -->
+          <rect x="115" y="216" width="150" height="14" rx="2" fill="#1B4332"/>
+          <rect x="123" y="210" width="24" height="20" fill="#1B4332"/>
+          <rect x="165" y="210" width="28" height="20" fill="#1B4332"/>
+          <rect x="207" y="210" width="24" height="20" fill="#1B4332"/>
+          <rect x="147" y="213" width="18" height="17" fill="#0d1f10"/>
+          <rect x="193" y="213" width="14" height="17" fill="#0d1f10"/>
+
+          <!-- Industrial drums / chemical containers -->
+          <ellipse cx="152" cy="182" rx="18" ry="9" fill="#5a6070"/>
+          <rect x="134" y="144" width="36" height="38" fill="#4a5060"/>
+          <ellipse cx="152" cy="144" rx="18" ry="9" fill="#6a7080"/>
+          <text x="152" y="168" font-family="'Inter',sans-serif" font-size="7" font-weight="600" fill="#a0b0c0" text-anchor="middle">CHEM</text>
+          <text x="152" y="177" font-family="'Inter',sans-serif" font-size="5.5" fill="#8090a0" text-anchor="middle">UN3077</text>
+
+          <ellipse cx="200" cy="182" rx="18" ry="9" fill="#5a6070"/>
+          <rect x="182" y="144" width="36" height="38" fill="#4a5060"/>
+          <ellipse cx="200" cy="144" rx="18" ry="9" fill="#6a7080"/>
+
+          <ellipse cx="248" cy="182" rx="18" ry="9" fill="#5a6070"/>
+          <rect x="230" y="144" width="36" height="38" fill="#4a5060"/>
+          <ellipse cx="248" cy="144" rx="18" ry="9" fill="#6a7080"/>
+
+          <!-- Chemical resistant badge -->
+          <rect x="26" y="145" width="64" height="32" rx="4" fill="rgba(82,183,136,.1)" stroke="rgba(82,183,136,.25)" stroke-width="1"/>
+          <text x="58" y="157" font-family="'Barlow Condensed',sans-serif" font-size="8" font-weight="700" fill="#52B788" text-anchor="middle">CHEM</text>
+          <text x="58" y="167" font-family="'Barlow Condensed',sans-serif" font-size="8" font-weight="700" fill="#52B788" text-anchor="middle">RESISTANT</text>
+          <text x="58" y="173" font-family="'Inter',sans-serif" font-size="5" fill="rgba(82,183,136,.6)" text-anchor="middle">Acids · Alkalis · Oils</text>
+
+          <!-- Conveyor belt (right side) -->
+          <rect x="300" y="190" width="90" height="14" rx="3" fill="#2a3035"/>
+          <rect x="300" y="192" width="90" height="10" rx="2" fill="#1e2830"/>
+          <!-- Belt ridges -->
+          <line x1="308" y1="192" x2="308" y2="202" stroke="#2a3840" stroke-width="1.5"/>
+          <line x1="320" y1="192" x2="320" y2="202" stroke="#2a3840" stroke-width="1.5"/>
+          <line x1="332" y1="192" x2="332" y2="202" stroke="#2a3840" stroke-width="1.5"/>
+          <line x1="344" y1="192" x2="344" y2="202" stroke="#2a3840" stroke-width="1.5"/>
+          <line x1="356" y1="192" x2="356" y2="202" stroke="#2a3840" stroke-width="1.5"/>
+          <line x1="368" y1="192" x2="368" y2="202" stroke="#2a3840" stroke-width="1.5"/>
+          <line x1="380" y1="192" x2="380" y2="202" stroke="#2a3840" stroke-width="1.5"/>
+          <!-- Belt rollers -->
+          <ellipse cx="300" cy="197" rx="8" ry="8" fill="#3a4050"/>
+          <ellipse cx="390" cy="197" rx="8" ry="8" fill="#3a4050"/>
+          <!-- Item on belt -->
+          <rect x="316" y="174" width="44" height="18" rx="2" fill="#404850"/>
+          <rect x="318" y="176" width="40" height="14" rx="1" fill="#4a5560"/>
+
+          <!-- Pipe / duct overhead -->
+          <rect x="0" y="24" width="400" height="8" fill="#1e2830"/>
+          <circle cx="100" cy="28" r="4" fill="#2a3840"/>
+          <circle cx="200" cy="28" r="4" fill="#2a3840"/>
+          <circle cx="300" cy="28" r="4" fill="#2a3840"/>
+
+          <text x="160" y="225" font-family="'Barlow Condensed',sans-serif" font-size="8" font-weight="900" fill="#52B788" text-anchor="middle" letter-spacing="1">STRUXO</text>
+          <text x="200" y="15" font-family="'Barlow Condensed',sans-serif" font-size="10" font-weight="700" fill="rgba(82,183,136,.2)" text-anchor="middle" letter-spacing="2">MANUFACTURING PLANT</text>
+        </svg>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!-- SUSTAINABILITY -->
+<section id="sustainability" class="bg-green">
+<div class="section-inner">
+  <div class="sus-grid">
+    <div>
+      <span class="section-tag" style="color:var(--sage)">Circular economy</span>
+      <h2 class="section-title" style="color:var(--w)">We don't make green claims. We make measurable impact.</h2>
+      <p style="color:rgba(255,255,255,.65);line-height:1.7;margin-bottom:1.5rem">Every STRUXO pallet is a unit of verified environmental impact — tracked from raw material to end-of-life recovery. We provide the data. You report the impact.</p>
+      <p style="color:rgba(255,255,255,.65);line-height:1.7;margin-bottom:2rem">India generates over 3.5 million tonnes of plastic waste annually. STRUXO transforms this liability into high-performance industrial assets. Our buy-back programme ensures no pallet ever reaches landfill.</p>
+      <div class="sus-stats">
+        <div class="sus-stat"><span class="sus-stat-num">18–25 kg</span><span class="sus-stat-label">Plastic diverted per pallet</span></div>
+        <div class="sus-stat"><span class="sus-stat-num">100%</span><span class="sus-stat-label">Recyclable at end of life</span></div>
+        <div class="sus-stat"><span class="sus-stat-num">25 T</span><span class="sus-stat-label">Plastic per 1,000 pallets</span></div>
+        <div class="sus-stat"><span class="sus-stat-num">BRSR</span><span class="sus-stat-label">Ready impact data</span></div>
+      </div>
+    </div>
+    <div>
+      <!-- CIRCULAR ECONOMY DIAGRAM SVG -->
+      <svg width="100%" viewBox="0 0 380 360" xmlns="http://www.w3.org/2000/svg">
+        <!-- Background -->
+        <circle cx="190" cy="180" r="155" fill="rgba(82,183,136,.05)" stroke="rgba(82,183,136,.12)" stroke-width="1"/>
+        <circle cx="190" cy="180" r="110" fill="rgba(82,183,136,.04)" stroke="rgba(82,183,136,.08)" stroke-width="1" stroke-dasharray="4,4"/>
+        <!-- Central logo -->
+        <circle cx="190" cy="180" r="44" fill="rgba(27,67,50,.6)" stroke="rgba(82,183,136,.3)" stroke-width="1.5"/>
+        <rect x="175" y="163" width="30" height="5" fill="#52B788"/>
+        <rect x="193" y="163" width="5" height="20" fill="#52B788"/>
+        <rect x="175" y="175" width="30" height="5" fill="#52B788"/>
+        <rect x="175" y="175" width="5" height="20" fill="#52B788"/>
+        <rect x="175" y="190" width="30" height="5" fill="#52B788"/>
+        <text x="190" y="208" font-family="'Barlow Condensed',sans-serif" font-size="8" font-weight="900" fill="#52B788" text-anchor="middle" letter-spacing="1">STRUXO</text>
+
+        <!-- 5 circular nodes -->
+        <!-- Node 1: Plastic Collection (top) -->
+        <circle cx="190" cy="36" r="34" fill="#143728" stroke="#52B788" stroke-width="1.5"/>
+        <text x="190" y="30" font-family="'Barlow Condensed',sans-serif" font-size="9" font-weight="700" fill="#52B788" text-anchor="middle">PLASTIC</text>
+        <text x="190" y="41" font-family="'Barlow Condensed',sans-serif" font-size="9" font-weight="700" fill="#52B788" text-anchor="middle">COLLECTION</text>
+        <text x="190" y="52" font-family="'Inter',sans-serif" font-size="6" fill="rgba(82,183,136,.6)" text-anchor="middle">Post-consumer waste</text>
+
+        <!-- Node 2: Manufacturing (top right) -->
+        <circle cx="320" cy="108" r="34" fill="#143728" stroke="#52B788" stroke-width="1.5"/>
+        <text x="320" y="102" font-family="'Barlow Condensed',sans-serif" font-size="9" font-weight="700" fill="#52B788" text-anchor="middle">HOT-COLD</text>
+        <text x="320" y="113" font-family="'Barlow Condensed',sans-serif" font-size="9" font-weight="700" fill="#52B788" text-anchor="middle">COMPRESS</text>
+        <text x="320" y="124" font-family="'Inter',sans-serif" font-size="6" fill="rgba(82,183,136,.6)" text-anchor="middle">Sheet production</text>
+
+        <!-- Node 3: Use Phase (bottom right) -->
+        <circle cx="320" cy="254" r="34" fill="#143728" stroke="#52B788" stroke-width="1.5"/>
+        <text x="320" y="248" font-family="'Barlow Condensed',sans-serif" font-size="9" font-weight="700" fill="#52B788" text-anchor="middle">60+ CYCLE</text>
+        <text x="320" y="259" font-family="'Barlow Condensed',sans-serif" font-size="9" font-weight="700" fill="#52B788" text-anchor="middle">USE PHASE</text>
+        <text x="320" y="270" font-family="'Inter',sans-serif" font-size="6" fill="rgba(82,183,136,.6)" text-anchor="middle">Logistics in action</text>
+
+        <!-- Node 4: Buy-back (bottom) -->
+        <circle cx="190" cy="322" r="34" fill="#143728" stroke="#52B788" stroke-width="1.5"/>
+        <text x="190" y="316" font-family="'Barlow Condensed',sans-serif" font-size="9" font-weight="700" fill="#52B788" text-anchor="middle">BUY-BACK</text>
+        <text x="190" y="327" font-family="'Barlow Condensed',sans-serif" font-size="9" font-weight="700" fill="#52B788" text-anchor="middle">PROGRAMME</text>
+        <text x="190" y="338" font-family="'Inter',sans-serif" font-size="6" fill="rgba(82,183,136,.6)" text-anchor="middle">End-of-life recovery</text>
+
+        <!-- Node 5: Reprocess (bottom left) -->
+        <circle cx="62" cy="254" r="34" fill="#143728" stroke="#52B788" stroke-width="1.5"/>
+        <text x="62" y="248" font-family="'Barlow Condensed',sans-serif" font-size="9" font-weight="700" fill="#52B788" text-anchor="middle">MATERIAL</text>
+        <text x="62" y="259" font-family="'Barlow Condensed',sans-serif" font-size="9" font-weight="700" fill="#52B788" text-anchor="middle">REPROCESS</text>
+        <text x="62" y="270" font-family="'Inter',sans-serif" font-size="6" fill="rgba(82,183,136,.6)" text-anchor="middle">Back into loop</text>
+
+        <!-- Node 6: No Landfill (top left) - but we only have 5... let me use 5 -->
+        <!-- Connecting arrows between nodes (curved paths) -->
+        <!-- 1→2 (top to top-right) -->
+        <path d="M 218 52 Q 280 52 294 82" fill="none" stroke="rgba(82,183,136,.5)" stroke-width="1.5" marker-end="url(#arrow-sus)"/>
+        <!-- 2→3 (top-right to bottom-right) -->
+        <path d="M 340 138 Q 350 180 340 224" fill="none" stroke="rgba(82,183,136,.5)" stroke-width="1.5" marker-end="url(#arrow-sus)"/>
+        <!-- 3→4 (bottom-right to bottom) -->
+        <path d="M 296 278 Q 260 308 224 316" fill="none" stroke="rgba(82,183,136,.5)" stroke-width="1.5" marker-end="url(#arrow-sus)"/>
+        <!-- 4→5 (bottom to bottom-left) -->
+        <path d="M 158 316 Q 124 308 90 278" fill="none" stroke="rgba(82,183,136,.5)" stroke-width="1.5" marker-end="url(#arrow-sus)"/>
+        <!-- 5→1 (bottom-left back to top) -->
+        <path d="M 46 224 Q 36 140 162 54" fill="none" stroke="rgba(82,183,136,.5)" stroke-width="1.5" marker-end="url(#arrow-sus)"/>
+        <defs>
+          <marker id="arrow-sus" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+            <path d="M2 1L8 5L2 9" fill="none" stroke="rgba(82,183,136,.8)" stroke-width="1.5" stroke-linecap="round"/>
+          </marker>
+        </defs>
+
+        <!-- ZERO LANDFILL label in centre -->
+        <text x="190" y="168" font-family="'Inter',sans-serif" font-size="6" fill="rgba(82,183,136,.4)" text-anchor="middle">ZERO</text>
+        <text x="190" y="194" font-family="'Inter',sans-serif" font-size="6" fill="rgba(82,183,136,.4)" text-anchor="middle">LANDFILL</text>
+      </svg>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<div class="section-inner">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center">
+    <div class="fade-up">
+      <span class="section-tag">Our story</span>
+      <h2 class="section-title">We didn't set out to build a pallet company.</h2>
+      <p style="color:var(--slate);line-height:1.75;margin-bottom:1.25rem">India has two crises that don't talk to each other. A plastic waste crisis — millions of tonnes of post-consumer plastic with nowhere to go. And a logistics infrastructure crisis — where the humble pallet, the foundation of every supply chain, is still dominated by wood that warps, splinters, and dies after a dozen trips.</p>
+      <p style="color:var(--slate);line-height:1.75;margin-bottom:1.25rem">STRUXO was founded on a single conviction: that these two problems share a solution. We use a hot-and-cold compression process to transform recycled plastic into pallets that outlast wood by 5×, cost less to operate, and carry a verifiable environmental story.</p>
+      <p style="color:var(--slate);line-height:1.75;margin-bottom:2rem">The mission hasn't changed: build industrial products that perform better, cost less over time, and prove that sustainability is not a compromise — it's a competitive advantage.</p>
+      <div style="display:flex;gap:1.5rem;flex-wrap:wrap">
+        <div style="text-align:center">
+          <span style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2rem;color:var(--g);display:block">100%</span>
+          <span style="font-size:.8rem;color:var(--slate)">Recycled plastic input</span>
+        </div>
+        <div style="text-align:center">
+          <span style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2rem;color:var(--g);display:block">ISO 8611</span>
+          <span style="font-size:.8rem;color:var(--slate)">Test compliance</span>
+        </div>
+        <div style="text-align:center">
+          <span style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2rem;color:var(--g);display:block">Zero</span>
+          <span style="font-size:.8rem;color:var(--slate)">Landfill at end of life</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <!-- Manufacturing process visual -->
+      <svg width="100%" viewBox="0 0 380 320" xmlns="http://www.w3.org/2000/svg">
+        <!-- Manufacturing process steps -->
+        <text x="190" y="22" font-family="'Barlow Condensed',sans-serif" font-size="14" font-weight="700" fill="#1B4332" text-anchor="middle" letter-spacing="1">MANUFACTURING PROCESS</text>
+
+        <!-- Step 1: Feedstock -->
+        <rect x="20" y="40" width="148" height="60" rx="8" fill="var(--mist)" stroke="var(--sage)" stroke-width="1"/>
+        <text x="94" y="64" font-family="'Barlow Condensed',sans-serif" font-size="12" font-weight="700" fill="#1B4332" text-anchor="middle">01. FEEDSTOCK</text>
+        <text x="94" y="78" font-family="'Inter',sans-serif" font-size="9" fill="#495057" text-anchor="middle">Sorted &amp; graded</text>
+        <text x="94" y="90" font-family="'Inter',sans-serif" font-size="9" fill="#495057" text-anchor="middle">recycled HDPE / PP</text>
+
+        <!-- Step 2: Compression -->
+        <rect x="212" y="40" width="148" height="60" rx="8" fill="var(--mist)" stroke="var(--sage)" stroke-width="1"/>
+        <text x="286" y="64" font-family="'Barlow Condensed',sans-serif" font-size="12" font-weight="700" fill="#1B4332" text-anchor="middle">02. COMPRESSION</text>
+        <text x="286" y="78" font-family="'Inter',sans-serif" font-size="9" fill="#495057" text-anchor="middle">Hot-cold compression</text>
+        <text x="286" y="90" font-family="'Inter',sans-serif" font-size="9" fill="#495057" text-anchor="middle">into uniform sheets</text>
+
+        <!-- Step 3: Cutting -->
+        <rect x="20" y="140" width="148" height="60" rx="8" fill="var(--mist)" stroke="var(--sage)" stroke-width="1"/>
+        <text x="94" y="164" font-family="'Barlow Condensed',sans-serif" font-size="12" font-weight="700" fill="#1B4332" text-anchor="middle">03. PRECISION CUT</text>
+        <text x="94" y="178" font-family="'Inter',sans-serif" font-size="9" fill="#495057" text-anchor="middle">CNC-guided cutting</text>
+        <text x="94" y="190" font-family="'Inter',sans-serif" font-size="9" fill="#495057" text-anchor="middle">to specification</text>
+
+        <!-- Step 4: Assembly -->
+        <rect x="212" y="140" width="148" height="60" rx="8" fill="var(--mist)" stroke="var(--sage)" stroke-width="1"/>
+        <text x="286" y="164" font-family="'Barlow Condensed',sans-serif" font-size="12" font-weight="700" fill="#1B4332" text-anchor="middle">04. ASSEMBLY</text>
+        <text x="286" y="178" font-family="'Inter',sans-serif" font-size="9" fill="#495057" text-anchor="middle">Fastened with SS-grade</text>
+        <text x="286" y="190" font-family="'Inter',sans-serif" font-size="9" fill="#495057" text-anchor="middle">fasteners</text>
+
+        <!-- Step 5: QC -->
+        <rect x="20" y="240" width="148" height="60" rx="8" fill="#1B4332" stroke="var(--leaf)" stroke-width="1"/>
+        <text x="94" y="264" font-family="'Barlow Condensed',sans-serif" font-size="12" font-weight="700" fill="#52B788" text-anchor="middle">05. QC + TEST</text>
+        <text x="94" y="278" font-family="'Inter',sans-serif" font-size="9" fill="rgba(255,255,255,.7)" text-anchor="middle">ISO 8611 load test</text>
+        <text x="94" y="290" font-family="'Inter',sans-serif" font-size="9" fill="rgba(255,255,255,.7)" text-anchor="middle">&amp; dimensional check</text>
+
+        <!-- Step 6: Dispatch -->
+        <rect x="212" y="240" width="148" height="60" rx="8" fill="#1B4332" stroke="var(--leaf)" stroke-width="1"/>
+        <text x="286" y="264" font-family="'Barlow Condensed',sans-serif" font-size="12" font-weight="700" fill="#52B788" text-anchor="middle">06. DISPATCH</text>
+        <text x="286" y="278" font-family="'Inter',sans-serif" font-size="9" fill="rgba(255,255,255,.7)" text-anchor="middle">Tagged, documented</text>
+        <text x="286" y="290" font-family="'Inter',sans-serif" font-size="9" fill="rgba(255,255,255,.7)" text-anchor="middle">&amp; certified</text>
+
+        <!-- Connecting arrows -->
+        <line x1="168" y1="70" x2="212" y2="70" stroke="#A8DABC" stroke-width="1.5" marker-end="url(#arrow-mfg)"/>
+        <line x1="286" y1="100" x2="286" y2="128" stroke="#A8DABC" stroke-width="1.5"/>
+        <line x1="286" y1="128" x2="94" y2="128" stroke="#A8DABC" stroke-width="1.5"/>
+        <line x1="94" y1="128" x2="94" y2="140" stroke="#A8DABC" stroke-width="1.5" marker-end="url(#arrow-mfg)"/>
+        <line x1="168" y1="170" x2="212" y2="170" stroke="#A8DABC" stroke-width="1.5" marker-end="url(#arrow-mfg)"/>
+        <line x1="286" y1="200" x2="286" y2="228" stroke="#A8DABC" stroke-width="1.5"/>
+        <line x1="286" y1="228" x2="94" y2="228" stroke="#A8DABC" stroke-width="1.5"/>
+        <line x1="94" y1="228" x2="94" y2="240" stroke="#A8DABC" stroke-width="1.5" marker-end="url(#arrow-mfg)"/>
+        <line x1="168" y1="270" x2="212" y2="270" stroke="#52B788" stroke-width="1.5" marker-end="url(#arrow-mfg2)"/>
+        <defs>
+          <marker id="arrow-mfg" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+            <path d="M2 1L8 5L2 9" fill="none" stroke="#A8DABC" stroke-width="1.5" stroke-linecap="round"/>
+          </marker>
+          <marker id="arrow-mfg2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+            <path d="M2 1L8 5L2 9" fill="none" stroke="#52B788" stroke-width="1.5" stroke-linecap="round"/>
+          </marker>
+        </defs>
+      </svg>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="bg-cloud">
+<div class="section-inner">
+  <span class="section-tag">Customer voices</span>
+  <h2 class="section-title">What our customers say.</h2>
+  <div class="testi-grid fade-up">
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">We track every pallet cycle. After switching to STRUXO, our per-trip cost dropped from ₹48 to ₹17. The ROI case was so clear our finance team approved the full order before procurement finished the analysis.</p>
+      <span class="testi-name">Warehouse Operations Head</span>
+      <span class="testi-role">Leading FMCG Company, Maharashtra</span>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">No more fumigation certificates. No more rejections at port. STRUXO pallets moved through customs faster and came back in perfect condition. We've standardised them for all export consignments.</p>
+      <span class="testi-name">Export Manager</span>
+      <span class="testi-role">Textile Manufacturer, Gujarat</span>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">STRUXO gave us verifiable plastic diversion data we could put directly into our BRSR filing. It's a pallet that does the job and tells a story our ESG team could actually use in investor presentations.</p>
+      <span class="testi-name">Head of Sustainability</span>
+      <span class="testi-role">Pharmaceutical Company, Hyderabad</span>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+<div class="section-inner">
+  <span class="section-tag">Common questions</span>
+  <h2 class="section-title" style="text-align:center">Frequently asked questions.</h2>
+  <div class="faq-list">
+    <div class="faq-item open">
+      <button class="faq-q" onclick="toggleFaq(this)">How long do STRUXO pallets actually last? <span class="faq-icon">+</span></button>
+      <div class="faq-a"><p>STRUXO pallets are ISO 8611 tested to 60+ load cycles under controlled conditions. In field use, customers regularly achieve 70–100+ cycles depending on load weight and handling method. Compare that to wooden pallets in Indian logistics, which average 10–15 cycles before requiring replacement.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Are STRUXO pallets certified for export without fumigation? <span class="faq-icon">+</span></button>
+      <div class="faq-a"><p>Yes. STRUXO pallets are manufactured from plastic and are fully exempt from ISPM 15 phytosanitary treatment requirements. They can be exported to all major international markets — including the EU, USA, Australia, and the Middle East — without fumigation certificates, saving both cost and processing time.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">What is the actual cost saving versus wooden pallets? <span class="faq-icon">+</span></button>
+      <div class="faq-a"><p>Over a full lifecycle: a ₹1,200 STRUXO pallet lasting 60 cycles costs ₹20 per cycle. A ₹400 wooden pallet lasting 12 cycles costs ₹33 per cycle — before counting goods damage, fumigation, repair, and disposal costs. Most customers see 40–63% reduction in per-trip pallet cost within 6 months of switching.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">What is the minimum order quantity? <span class="faq-icon">+</span></button>
+      <div class="faq-a"><p>Standard MOQ is 100 pallets for STRUXO LOAD and BRICK. We offer pilot programmes starting from 50 pallets for customers who want to run a controlled comparison before committing to a full transition. Custom STRUXO FORM specifications start at 50 units.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Can you manufacture custom dimensions? <span class="faq-icon">+</span></button>
+      <div class="faq-a"><p>Yes, through our STRUXO FORM line. Our engineering team designs pallets to your exact dimensional and load requirements — including custom entry types, surface features, colour, and identification markings. Lead time is typically 3–4 weeks from design approval.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Are STRUXO pallets suitable for pharma / cold chain use? <span class="faq-icon">+</span></button>
+      <div class="faq-a"><p>Yes. STRUXO pallets are non-porous, non-hygroscopic, and compatible with pharmaceutical cleaning agents and disinfectants. Operating temperature range is -30°C to +70°C, making them suitable for cold chain, ambient, and temperature-controlled pharma distribution.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">What happens to STRUXO pallets at end of life? <span class="faq-icon">+</span></button>
+      <div class="faq-a"><p>STRUXO operates a buy-back programme. When your pallets reach end of usable life, notify your account manager. STRUXO arranges collection, reprocesses the material, and provides a credit note redeemable against your next order. You also receive an impact report documenting material recovered. Nothing goes to landfill.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">How do I get a TCO comparison for my operation? <span class="faq-icon">+</span></button>
+      <div class="faq-a"><p>Contact us below. We'll ask you four questions — your current pallet cost, trip volume, pallet life, and annual replacement spend — and return a detailed cost comparison within 48 hours, specific to your industry and operating conditions. No obligation.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="bg-green">
+<div class="section-inner">
+  <div class="contact-grid">
+    <div class="contact-info">
+      <h3>Let's talk about what STRUXO can save you.</h3>
+      <p>Whether you're ready to order, want a sample, or just want to run the numbers — start here. Our team responds within one business day.</p>
+      <ul class="contact-steps">
+        <li><div class="step-num">1</div><p>Within 4 hours: A STRUXO solutions specialist reaches out to understand your requirements</p></li>
+        <li><div class="step-num">2</div><p>Within 24 hours: We run a TCO analysis on your current pallet spend and show you the exact comparison</p></li>
+        <li><div class="step-num">3</div><p>Within 48 hours: Product recommendation, sample availability, and a commercial proposal — no pressure</p></li>
+      </ul>
+      <div style="margin-top:2rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,.12)">
+        <p style="color:rgba(255,255,255,.5);font-size:.82rem;margin-bottom:.5rem">DIRECT CONTACT</p>
+        <p style="color:rgba(255,255,255,.75);font-size:.9rem">hello@struxo.in</p>
+        <p style="color:rgba(255,255,255,.75);font-size:.9rem">+91 XXXXX XXXXX</p>
+        <p style="color:rgba(255,255,255,.5);font-size:.82rem;margin-top:1rem">Mon–Sat · 9:00 AM – 6:00 PM IST</p>
+      </div>
+    </div>
+    <div class="contact-form">
+      <h3 style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.6rem;color:var(--g);margin-bottom:1.5rem">Get Your Free TCO Analysis</h3>
+      <form onsubmit="submitForm(event)">
+        <div class="form-row">
+          <div class="form-group"><label>Full Name *</label><input type="text" placeholder="Your full name" required></div>
+          <div class="form-group"><label>Company *</label><input type="text" placeholder="Your organisation" required></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Work Email *</label><input type="email" placeholder="you@company.com" required></div>
+          <div class="form-group"><label>Phone *</label><input type="tel" placeholder="+91 XXXXX XXXXX" required></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Industry *</label>
+            <select required>
+              <option value="">Select industry</option>
+              <option>FMCG &amp; Consumer Goods</option>
+              <option>Pharmaceuticals</option>
+              <option>Automotive</option>
+              <option>Warehousing &amp; 3PL</option>
+              <option>Export &amp; Freight</option>
+              <option>Retail &amp; Modern Trade</option>
+              <option>Manufacturing</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Monthly Pallet Need</label>
+            <select>
+              <option value="">Select range</option>
+              <option>Under 100 pallets</option>
+              <option>100–500 pallets</option>
+              <option>500–2,000 pallets</option>
+              <option>2,000–10,000 pallets</option>
+              <option>10,000+ pallets</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>What are you looking for?</label>
+          <select>
+            <option>Free TCO analysis</option>
+            <option>Product sample</option>
+            <option>Custom pallet brief (STRUXO FORM)</option>
+            <option>Volume pricing</option>
+            <option>ESG / BRSR sustainability data</option>
+            <option>General enquiry</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Anything else? (optional)</label>
+          <textarea placeholder="Tell us about your current pallet setup, volumes, or any specific requirements..."></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Request My Free TCO Analysis →</button>
+        <p style="font-size:.75rem;color:var(--slate);text-align:center;margin-top:.75rem">No spam. No pressure. We respond to every enquiry within one business day.</p>
+      </form>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<div class="footer-inner">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <svg width="120" viewBox="0 0 120 36" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="1" width="24" height="5.5" fill="#52B788"/>
+        <rect x="18" y="1" width="6" height="18" fill="#52B788"/>
+        <rect x="0" y="13" width="24" height="5.5" fill="#52B788"/>
+        <rect x="0" y="13" width="6" height="18" fill="#52B788"/>
+        <rect x="0" y="28.5" width="24" height="5.5" fill="#52B788"/>
+        <text x="32" y="28" font-family="'Barlow Condensed',sans-serif" font-weight="900" font-size="26" fill="#FFFFFF" letter-spacing="1.5">STRUXO</text>
+      </svg>
+      <p>Recycled plastic pallets engineered for India's supply chains. The pallet that pays you back.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Products</h4>
+      <ul>
+        <li><a href="#products">STRUXO LOAD</a></li>
+        <li><a href="#products">STRUXO BRICK</a></li>
+        <li><a href="#products">STRUXO FORM</a></li>
+        <li><a href="#contact">Custom brief</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Industries</h4>
+      <ul>
+        <li><a href="#industries">FMCG</a></li>
+        <li><a href="#industries">Pharmaceuticals</a></li>
+        <li><a href="#industries">Export &amp; Freight</a></li>
+        <li><a href="#industries">Automotive</a></li>
+        <li><a href="#industries">Warehousing</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#about">About STRUXO</a></li>
+        <li><a href="#sustainability">Sustainability</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact">Get TCO Analysis</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 STRUXO. All rights reserved. | Recycled Plastic Pallets — Made in India.</p>
+    <p>ISPM 15 Exempt · ISO 8611 Tested · 100% Recyclable</p>
+  </div>
+</div>
+</footer>
+
+<script>
+// Industry tabs
+function showInd(id, btn) {
+  document.querySelectorAll('.ind-panels > div').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.ind-tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('ind-' + id).classList.add('active');
+  btn.classList.add('active');
+}
+
+// FAQ accordion
+function toggleFaq(btn) {
+  const item = btn.parentElement;
+  const wasOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+  if (!wasOpen) item.classList.add('open');
+}
+
+// Form submit
+function submitForm(e) {
+  e.preventDefault();
+  const btn = e.target.querySelector('.btn-submit');
+  btn.textContent = 'Request submitted! We\'ll be in touch within 24 hours.';
+  btn.style.background = '#52B788';
+  btn.style.color = '#0d2218';
+  btn.disabled = true;
+}
+
+// Fade-up on scroll
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.12 });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+// Sticky nav shadow
+window.addEventListener('scroll', () => {
+  document.querySelector('nav').style.boxShadow = 
+    window.scrollY > 10 ? '0 2px 20px rgba(27,67,50,.12)' : 'none';
+});
+</script>
+</body>
+</html>
